@@ -17,8 +17,8 @@
 
 ## Integrantes:
 
-- <a href="https://www.linkedin.com/in/">Aluno 1</a>
-- <a href="https://www.linkedin.com/in/">Aluno 2</a>
+- <a href="https://www.linkedin.com/in/">Victor</a>
+- <a href="https://www.linkedin.com/in/">Daniel</a>
 - <a href="https://www.linkedin.com/in/">Aluno 3</a>
 
 - [1. Visão Geral do Projeto](#1-visão-geral-do-projeto)
