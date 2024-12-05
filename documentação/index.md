@@ -17,7 +17,7 @@
 
 ## Integrantes:
 
-- <a href="https://www.linkedin.com/in/">Aluno 1</a>
+- <a href="https://www.linkedin.com/in/">Victor</a>
 - <a href="https://www.linkedin.com/in/">Aluno 2</a>
 - <a href="https://www.linkedin.com/in/">Aluno 3</a>
 
