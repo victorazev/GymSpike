@@ -47,6 +47,46 @@
 
 #### 1.1.2 Análise do Cenário (Matriz SWOT)
 
+- A análise SWOT é uma ferramenta de gestão utilizada para avaliar um projeto, produto ou empresa. Consiste em identificar e analisar os pontos fortes e fracos internos, assim como as oportunidades e ameaças presentes no ambiente externo. Essa análise permite ter uma visão clara do cenário atual, identificar os principais desafios e oportunidades e tomar decisões mais estratégicas para alcançar os objetivos desejados.
+
+ ![SWOT](/imagens/Neutral%20SWOT%20Analysis%20Template.png)
+
+# Forças:
+- Feedback contínuo com a análise de dados do usuário: através dos dados do usuário
+será gerado uma análise gráfica para o usuário ver o seu progresso.
+- Aplicação gratuita: não será cobrado para utilizar a aplicação.
+- Induz o usuário a compartilhar o seu progresso: seja no meio social compartilhando
+com seus amigos instigando eles a participarem e utilizarem o aplicativo juntos e
+também meio de status onde a pessoa posta a análise gráfica numa rede social gerando
+engajamento gratuito.
+- Aplicação intuitiva: será desenvolvida pensando em todas as habilidades tecnologia da
+sociedade para atender principalmente os usuários básicos de tecnologia.
+
+# Fraqueza:
+- Equipe de desenvolvimento inexperiente: A falta experiência pode levar a atrasos e
+dificuldade no desenvolvimento do projeto.
+- Dependência de investidores: Necessidade de arrecadar recursos pode limitar a
+autonomia do negócio e direcionar a decisão do negócio para os investidores.
+- Custo de manutenção e desenvolvimento: Custos elevados para desenvolvimento
+podem comprometer ou atrasar o projeto.
+
+# Oportunidades:
+- Público alvo abrangente na sociedade e crescente: Permite explorar diferentes
+segmentos e nichos, aumentando a chance de alcançar mais usuários.
+- Engajamento do negócio: Fortalece o negócio e facilita a geração de indicações,
+impulsionando o crescimento do seu negócio.
+- Parcerias com empresas e influenciadores: União com empresas e influenciadores
+relevantes, alcançando um público maior e mais segmentado.
+- Expansão para outros mercados: Explorar novas áreas e fortalecer sua posição no
+mercado.
+
+# Ameaças:
+- Mercado competitivo: Existem outras aplicações com propósitos parecidos
+- Perda de interesse do usuário no produto: Usuário pode se cansar com o tempo
+- Tendência volátil: As tendências da sociedade variam com o tempo e isso pode afetar
+o alcance do aplicativo
+- Barreira social: Dificuldade de adesão do aplicativo pela sociedade.
+
 ## 2. Proposta da Solução
 
 ### 2.1 Descritivo Geral da Solução
