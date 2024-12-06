@@ -47,9 +47,13 @@
 
 #### 1.1.2 Análise do Cenário (Matriz SWOT)
 
-- A análise SWOT é uma ferramenta de gestão utilizada para avaliar um projeto, produto ou empresa. Consiste em identificar e analisar os pontos fortes e fracos internos, assim como as oportunidades e ameaças presentes no ambiente externo. Essa análise permite ter uma visão clara do cenário atual, identificar os principais desafios e oportunidades e tomar decisões mais estratégicas para alcançar os objetivos desejados.
+&emsp;&emsp; A análise SWOT é uma ferramenta de gestão utilizada para avaliar um projeto, produto ou empresa. Consiste em identificar e analisar os pontos fortes e fracos internos, assim como as oportunidades e ameaças presentes no ambiente externo. Essa análise permite ter uma visão clara do cenário atual, identificar os principais desafios e oportunidades e tomar decisões mais estratégicas para alcançar os objetivos desejados.
 
- ![SWOT](/imagens/Neutral%20SWOT%20Analysis%20Template.png)
+<div align="center">
+  <sub>Figura X: Matriz SWOT</sub>
+  <img src="./imagens/Neutral SWOT Analysis Template.png" width="100%">
+  <sup>Fonte: Os autores (2024)</sup>
+</div>
 
 # Forças:
 - Feedback contínuo com a análise de dados do usuário: através dos dados do usuário
