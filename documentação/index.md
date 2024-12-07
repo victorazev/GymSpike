@@ -105,6 +105,23 @@ o alcance do aplicativo
 
 ### 3.1 Perfis de Usuários
 
+# Usuários do aplicativo
+&emsp;&emsp;Usuários que irão utilizar o aplicativo:
+- Iniciante
+  - Descrição: Pessoa começando a prática de exercícios, sem experiência.
+  - Necessidades: gamificação para motivação, análises detalhadas, desafios acessíveis.
+- Avançado
+  - Descrição: Usuário com experiência em exercícios, busca aprimorar e manter engajamento.
+  - Necessidades: Desafios competitivos, análises detalhadas, rankings.
+# Usuários administrativos ou parceiros
+&emsp;&emsp;Usuários que não irão utilizar o app como praticante:
+- Administrador/Treinador
+  - Descrição: Profissional que gerencia usuários ou fornece planos e conteúdos.
+  - Necessidades: Gerenciamento de conteúdo, monitoramento de progresso, comunicação com usuários.
+- Parceiro/Empresa
+  - Descrição: Marca ou organização que deseja promover serviços ou produtos relacionados a exercícios.
+  - Necessidades: Conectar-se com usuários, promover campanhas de marketing, obter insights de engajamento.
+
 ### 3.2 Personas
 
 ### 3.3 User Stories
