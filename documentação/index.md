@@ -115,4 +115,36 @@ o alcance do aplicativo
 
 ### 4.2 Requisitos não Funcionais
 
+# RNF-001 Desempenho
+- Tempo de resposta: login, leitura e escrita.
+- Capacidade de processamento: requisições simultâneas.
+
+# RNF-002 Escalabilidade.
+- Suportar vários usuários ativos.
+- O banco de dados deve suportar crescimento contínuo.
+
+# RNF-003 Confiabilidade
+- Disponibilidade.
+- Integridade dos dados.
+
+# RNF-004 Segurança
+- Autenticação.
+- Armazenamento de dados: Dados sensíveis devem ser criptografados.
+- Controle de acesso. 
+
+# RNF-005 Manutenibilidade
+- O código-fonte deve seguir padrões e convenções claras para facilitar futuras atualizações.
+- O sistema deve ser modular, permitindo a substituição ou melhoria de componentes sem impacto significativo nas demais partes.
+- Logs devem ser detalhados e acessíveis para facilitar diagnósticos e auditorias.
+
+# RNF-006 Portabilidade
+- Multiplataforma.
+- Permitir migração de fornecedor de banco de dados.
+
+# RNF-007 Usabilidade
+- A interface deve ser intuitiva.
+
+# RNF-008 Conformidade
+- O sistema deve estar em conformidade com regulamentações de proteção de dados.
+
 ### 4.3 Regra de Negócio
