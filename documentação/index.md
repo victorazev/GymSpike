@@ -113,6 +113,34 @@ o alcance do aplicativo
 
 ### 4.1 Requisitos Funcionais
 
+&emsp;&emsp; Os requisitos funcionais são descrições de serviços que o sistema deve disponibilizar, descrevendo as funcionalidade ou serviços que o sistema deve fornecer aos usuários finais. Abaixo estão listados os requisitos funcionais da aplicação web a ser desenvolvida, subdivididos nos três principais pilares do projeto.
+
+#### 4.1.1 Cadastro e gerenciamento de dados:
+| Identificador | Descrição                                                               | Prioridade |
+| ------------- | ----------------------------------------------------------------------- | ---------- |
+| RF01          | O sistema deve permitir o cadastro de usuários                          | Alta       |
+| RF02          | Permitir login(autenticação) do usuário                                 | Alta       |
+| RF03          | Editar informações do usuário                                           | Alta       |
+| RF04          | Exibir perfil de outros usuários                                        | Média      |
+| RF05          | Permitir conexão entre usuários                                         | Média      |
+| RF06          | Criar grupos de amigos                                                  | Baixa      |
+
+#### 4.1.2 Sistema de gamificação:
+| Identificador | Descrição                                                               | Prioridade |
+| ------------- | ----------------------------------------------------------------------- | ---------- |
+| RF07          | O sistema deve oferecer atividades diárias e semanais                   | Alta       |
+| RF08          | O usuário poderá visualizar o ranking geral                             | Média      |
+| RF09          | O usuário receberá recompensas de acordo com a conclusão de atividades  | Baixa      |
+| RF10          | O usuário terá uma sequência de dias de atividades                      | Alta       |
+| RF11          | O usuário poderá realizar atividades em conjunto com um grupo de amigos | Baixa      |
+
+#### 4.1.3 Feedback e análise de progresso:
+| Identificador | Descrição                                                               | Prioridade |
+| ------------- | ----------------------------------------------------------------------- | ---------- |
+| RF12          | O usuário poderá visualizar seu histórico de atividades                 | Alta       |
+| RF13          | O usuário poderá compartilhar sua análise de atividades na comunidade   | Baixa      |
+| RF14          | O usuário poderá compartilhar o feedback em aplicações externas         | Baixa      |
+
 ### 4.2 Requisitos não Funcionais
 
 ### 4.3 Regra de Negócio
