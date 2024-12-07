@@ -113,9 +113,9 @@ o alcance do aplicativo
 
 ### 4.1 Requisitos Funcionais
 
-&emsp;&emsp; Os requisitos funcionais são descrições de serviços que o sistema deve disponibilizar, descrevendo as funcionalidade ou serviços que o sistema deve fornecer aos usuários finais. Abaixo estão listados os requisitos funcionais da aplicação web a ser desenvolvida, subdivididos nos três principais pilares do projeto:
+&emsp;&emsp; Os requisitos funcionais são descrições de serviços que o sistema deve disponibilizar, descrevendo as funcionalidade ou serviços que o sistema deve fornecer aos usuários finais. Abaixo estão listados os requisitos funcionais da aplicação web a ser desenvolvida, subdivididos nos três principais pilares do projeto.
 
-#### 1-Cadastro e gerenciamento de dados:
+#### 4.1.1 Cadastro e gerenciamento de dados:
 | Identificador | Descrição                                                               | Prioridade |
 | ------------- | ----------------------------------------------------------------------- | ---------- |
 | RF01          | O sistema deve permitir o cadastro de usuários                          | Alta       |
@@ -125,7 +125,7 @@ o alcance do aplicativo
 | RF05          | Permitir conexão entre usuários                                         | Média      |
 | RF06          | Criar grupos de amigos                                                  | Baixa      |
 
-#### 2-Sistema de gamificação:
+#### 4.1.2 Sistema de gamificação:
 | Identificador | Descrição                                                               | Prioridade |
 | ------------- | ----------------------------------------------------------------------- | ---------- |
 | RF07          | O sistema deve oferecer atividades diárias e semanais                   | Alta       |
@@ -134,7 +134,7 @@ o alcance do aplicativo
 | RF10          | O usuário terá uma sequência de dias de atividades                      | Alta       |
 | RF11          | O usuário poderá realizar atividades em conjunto com um grupo de amigos | Baixa      |
 
-#### 3-Feedback e análise de progresso:
+#### 4.1.3 Feedback e análise de progresso:
 | Identificador | Descrição                                                               | Prioridade |
 | ------------- | ----------------------------------------------------------------------- | ---------- |
 | RF12          | O usuário poderá visualizar seu histórico de atividades                 | Alta       |
