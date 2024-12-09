@@ -144,7 +144,7 @@ o alcance do aplicativo
 # RNF-007 Usabilidade
 - A interface deve ser intuitiva.
 
-# RNF-008 Conformidade
+#### RNF-008 Conformidade
 - O sistema deve estar em conformidade com regulamentações de proteção de dados.
 
 ### 4.3 Regra de Negócio
