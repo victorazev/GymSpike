@@ -101,7 +101,7 @@ o alcance do aplicativo
 
 &emsp;&emsp;O Canvas de Proposta de Valor é uma ferramenta visual que ajuda empresas a criar, analisar e refinar suas propostas de valor. Ele faz parte do Modelo de Negócio Canvas (Business Model Canvas), desenvolvido por Alexander Osterwalder, e se concentra em identificar e entender os clientes e suas necessidades, para oferecer produtos e serviços que atendam essas demandas de maneira eficaz.
 
-&emsp;&emsp;Diante do exposto, utilizando a metodologia do Canvas proposta de valor no projeto GymSparks faz com que percebamos as dificuldades e necessidades do cliente.Logo, em contrapartida dessas adversidades,podemos traçar um desenvolvimento incisivo de uma solução que possa agregar valores ao cliente.
+&emsp;&emsp;Diante do exposto, utilizando a metodologia do Canvas proposta de valor no projeto GymSparks faz com que percebamos as dificuldades e necessidades do cliente. Logo, em contrapartida dessas adversidades,podemos traçar um desenvolvimento incisivo de uma solução que possa agregar valores ao cliente.
 
 <div align="center">
   <sub>Figura X: Canvas de Valor</sub>
@@ -109,7 +109,7 @@ o alcance do aplicativo
   <sup>Fonte: Os autores (2024)</sup>
 </div>
 
-&emsp;&emsp;Diante do exposto, utilizando a metodologia do Canvas proposta de valor no projeto GymSparks faz com que percebamos as dificuldades e necessidades do cliente.Logo, em contrapartida dessas adversidades,podemos traçar um desenvolvimento incisivo de uma solução que possa agregar valores ao cliente.
+&emsp;&emsp;Diante do exposto, utilizando a metodologia do Canvas proposta de valor no projeto GymSparks faz com que percebamos as dificuldades e necessidades do cliente. Logo, em contrapartida dessas adversidades,podemos traçar um desenvolvimento incisivo de uma solução que possa agregar valores ao cliente.
 
 ### 2.4 Matriz de Risco
 
@@ -137,6 +137,50 @@ o alcance do aplicativo
 ### 3.2 Personas
 
 ### 3.3 User Stories
+
+&emsp;&emsp; User Stories são uma ferramenta essencial em metodologias ágeis para descrever funcionalidades do ponto de vista do usuário. Logo, ajudam a manter o foco nas necessidades e expectativas do usuário final, garantindo que o produto entregue realmente atenda às suas demandas.
+
+- **Como** um usuário, **quero** me cadastrar no sistema **para** acessar todas as funcionalidades.
+  - Relacionado ao RF01: "O sistema deve permitir o cadastro de usuários".
+
+- **Como** um usuário, **quero** fazer login no sistema **para** acessar minha conta com segurança.
+  - Relacionado ao RF02: "Permitir login (autenticação) do usuário".
+
+- **Como** um usuário, **quero** editar minhas informações pessoais **para** mantê-las atualizadas.
+  - Relacionado ao RF03: "Editar informações do usuário".
+
+- **Como** um usuário, **quero** visualizar o perfil de outros usuários **para** conhecer mais sobre eles.
+  - Relacionado ao RF04: "Exibir perfil de outros usuários".
+
+- **Como** um usuário, **quero** me conectar com outros usuários **para** ampliar minha rede de amigos.
+  - Relacionado ao RF05: "Permitir conexão entre usuários".
+
+- **Como** um usuário, **quero** criar grupos de amigos **para** interagir com eles de forma organizada.
+  - Relacionado ao RF06: "Criar grupos de amigos".
+
+- **Como** um usuário, **quero** receber atividades recorrentes **para** criar motivações nas minhas rotinas.
+  - Relacionado ao RF07: "O sistema deve oferecer atividades diárias e semanais"
+
+- **Como** um usuário, **quero** visualizar tabelas de ranks **para** poder comparar com a comunidade de amigos.
+  - Relacionado ao RF08: "O usuário poderá visualizar o ranking geral"
+
+- **Como** um usuário, **quero** receber recompensas por completar atividades **para** aumentar minhas motivações.
+  - Relacionado ao RF09: "O usuário receberá recompensas de acordo com a conclusão de atividades"
+
+- **Como** um usuário, **quero** ter um progresso de dias **para** manter motivações nas minhas rotinas.
+  - Relacionado ao RF10: "O usuário terá uma sequência de dias de atividades"
+
+- **Como** um usuário, **quero** realizar atividades em conjunto **para** ter maior interação social nas minhas rotinas.
+  - Relacionado ao RF11: "O usuário poderá realizar atividades em conjunto com um grupo de amigos"
+
+- **Como** um usuário, **quero** visualizar o meu histórico de atividades **para** poder ter um parâmetro de evolução.
+  - Relacionado ao RF12: "O poderá visualizar seu histórico de atividades"
+
+- **Como** um usuário, **quero** compartilhar sua análise de atividades na comunidade **para** motivar e participar da comunidade.
+  - Relacionado ao RF13: "O sistema deve oferecer o compartilhamento na comunidade interna"
+
+- **Como** um usuário, **quero** compartilhar o feedback em aplicações externas **para** ter uma interação social maior.
+  - Relacionado ao RF14: "O sistema deve oferecer o compartimento em aplicações externas"
 
 ## 4. Requisitos
 
