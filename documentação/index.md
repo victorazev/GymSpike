@@ -119,7 +119,7 @@ o alcance do aplicativo
 - Tempo de resposta: login, leitura e escrita.
 - Capacidade de processamento: requisições simultâneas.
 
-# RNF-002 Escalabilidade.
+#### RNF-002 Escalabilidade.
 - Suportar vários usuários ativos.
 - O banco de dados deve suportar crescimento contínuo.
 
