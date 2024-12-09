@@ -114,6 +114,28 @@ o alcance do aplicativo
 
 ### 3.2 Personas
 
+&emsp;&emsp;Persona é a representação fictícia do seu cliente ideal. É baseada em dados reais sobre comportamento e características demográficas dos seus clientes. Apresenta, também, uma criação de suas histórias pessoais, motivações, objetivos, desafios e preocupações.
+
+Persona 1 – Ricardo 
+Emprego: Vendedor
+Idade: 35 anos
+Gênero: Masculino
+Educação: Graduado em administração.
+Mídias: facebook e Youtube.
+Objetivos: Crescer pessoalmente, profissionalmente e obter uma rotina saudável
+Desafios: Criar uma rotina saudável.
+Como minha empresa pode ajuda-la : Vamos produzir um aplicativo que vai conseguir criar uma rotina saudável do 0 e engaja-lo para continuar nela.
+
+Persona 2 - Sayuri
+Emprego: Home Office
+Idade:  23 anos
+Gênero: Feminino 
+Educação: Graduando em publicidade
+Mídias: Instagram, X e Linkedin.
+Objetivos: Emagrecer, se identificar com um esporte e se sentir confiante com o próprio corpo.
+Desafios: manter uma rotina saudável e parar de trocar a cada 3 meses de esporte.
+Como minha empresa pode ajuda-la: Orientaremos ela no esporte que ela optar por fazer e realizaremos engajamentos para ela manter a rotina saudável e a adesão ao esporte escolhido.
+
 ### 3.3 User Stories
 
 ## 4. Requisitos
