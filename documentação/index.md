@@ -123,7 +123,7 @@ o alcance do aplicativo
 - Suportar vários usuários ativos.
 - O banco de dados deve suportar crescimento contínuo.
 
-# RNF-003 Confiabilidade
+#### RNF-003 Confiabilidade
 - Disponibilidade.
 - Integridade dos dados.
 
