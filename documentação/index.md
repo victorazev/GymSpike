@@ -127,7 +127,7 @@ o alcance do aplicativo
 - Disponibilidade.
 - Integridade dos dados.
 
-# RNF-004 Segurança
+#### RNF-004 Segurança
 - Autenticação.
 - Armazenamento de dados: Dados sensíveis devem ser criptografados.
 - Controle de acesso. 
