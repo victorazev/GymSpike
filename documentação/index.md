@@ -99,6 +99,18 @@ o alcance do aplicativo
 
 ### 2.3 Proposta de Valor (Value Proposition Canvas)
 
+&emsp;&emsp;O Canvas de Proposta de Valor é uma ferramenta visual que ajuda empresas a criar, analisar e refinar suas propostas de valor. Ele faz parte do Modelo de Negócio Canvas (Business Model Canvas), desenvolvido por Alexander Osterwalder, e se concentra em identificar e entender os clientes e suas necessidades, para oferecer produtos e serviços que atendam essas demandas de maneira eficaz.
+
+&emsp;&emsp;Diante do exposto, utilizando a metodologia do Canvas proposta de valor no projeto GymSparks faz com que percebamos as dificuldades e necessidades do cliente.Logo, em contrapartida dessas adversidades,podemos traçar um desenvolvimento incisivo de uma solução que possa agregar valores ao cliente.
+
+<div align="center">
+  <sub>Figura X: Canvas de Valor</sub>
+  <img src="./imagens/Canvas de Valor.png" width="100%">
+  <sup>Fonte: Os autores (2024)</sup>
+</div>
+
+&emsp;&emsp;Diante do exposto, utilizando a metodologia do Canvas proposta de valor no projeto GymSparks faz com que percebamos as dificuldades e necessidades do cliente.Logo, em contrapartida dessas adversidades,podemos traçar um desenvolvimento incisivo de uma solução que possa agregar valores ao cliente.
+
 ### 2.4 Matriz de Risco
 
 ## 3. Análise de experiência do usuário
