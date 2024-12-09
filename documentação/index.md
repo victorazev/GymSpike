@@ -145,3 +145,28 @@ Como minha empresa pode ajuda-la: Orientaremos ela no esporte que ela optar por 
 ### 4.2 Requisitos não Funcionais
 
 ### 4.3 Regra de Negócio
+
+&emsp;&emsp;É uma diretriz ou restrição específica do domínio de negócio que orienta o funcionamento do sistema para atender às políticas organizacionais. Elas definem como os dados devem ser manipulados e as operações que são permitidas ou obrigatórias em situações específicas. Por exemplo, uma regra de negócio pode ser "clientes menores de 18 anos não podem realizar compras" ou "cada cliente pode solicitar no máximo três reembolsos por mês". As regras de negócio são essenciais para alinhar o sistema às necessidades e objetivos estratégicos da organização.
+
+Cadastro e gerenciamento de dados
+1.	RN01: O cadastro de usuários deverá incluir campos obrigatórios, como nome completo, e-mail válido e senha segura.
+2.	RN02: O sistema deve validar os dados no momento do cadastro, impedindo duplicidade de e-mails e aplicando validações de formato.
+3.	RN03: Somente usuários autenticados poderão acessar funcionalidades além do cadastro e recuperação de senha.
+4.	RN04: Usuários poderão editar informações no perfil, mas e-mails e senhas alterados devem passar por revalidação.
+5.	RN05: A exibição de perfis de outros usuários será limitada a informações públicas ou compartilhadas, respeitando configurações de privacidade.
+6.	RN06: Para conexões entre usuários, será necessário consentimento mútuo para a criação de vínculo.
+7.	RN07: A criação de grupos será limitada a usuários autenticados, e o grupo deverá ter um nome único.
+________________________________________
+Gamificação
+1.	RN08: As atividades diárias e semanais devem ser disponibilizadas em horários pré-definidos e variáveis para manter o engajamento.
+2.	RN09: A pontuação no ranking geral será atualizada em tempo real com base nas atividades concluídas.
+3.	RN10: Recompensas concedidas ao usuário serão armazenadas em um inventário virtual e não poderão ser convertidas em dinheiro.
+4.	RN11: A sequência de dias de atividades será resetada caso o usuário não realize uma atividade dentro do prazo especificado.
+5.	RN12: Atividades em grupo devem ser iniciadas por usuários dentro de um mesmo grupo previamente criado.
+________________________________________
+Feedback e análise de progresso
+1.	RN13: O histórico de atividades deve ser armazenado e acessível apenas pelo usuário.
+2.	RN14: A análise de atividades compartilhada na comunidade será moderada para garantir adequação de conteúdo.
+3.	RN15: O feedback compartilhado em aplicações externas deve ser padronizado e conter apenas informações permitidas pelo usuário.
+4.	RN16: A análise de progresso do usuário deve incluir indicadores visuais (gráficos ou métricas) baseados no desempenho individual.
+
