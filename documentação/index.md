@@ -18,7 +18,7 @@
 ## Integrantes:
 
 - <a href="https://www.linkedin.com/in/victorazev/">Victor</a>
-- <a href="https://www.linkedin.com/in/">Daniel</a>
+- <a href="https://www.linkedin.com/in/daniel-ferreira-b74660340/">Daniel</a>
 - <a href="https://www.linkedin.com/in/pablofsc/">Pablo</a>
 - <a href="https://www.linkedin.com/in/gustavo-de-oliveira-teixeira-735565227/">Gustavo</a>
 - <a href="https://www.linkedin.com/in/guilherme-cally-541264200/">Guilherme</a>
