@@ -17,9 +17,13 @@
 
 ## Integrantes:
 
-- <a href="https://www.linkedin.com/in/">Victor</a>
-- <a href="https://www.linkedin.com/in/">Daniel</a>
-- <a href="https://www.linkedin.com/in/">Aluno 3</a>
+- <a href="https://www.linkedin.com/in/victorazev/">Victor</a>
+- <a href="https://www.linkedin.com/in/daniel-ferreira-b74660340/">Daniel</a>
+- <a href="https://www.linkedin.com/in/pablofsc/">Pablo</a>
+- <a href="https://www.linkedin.com/in/gustavo-de-oliveira-teixeira-735565227/">Gustavo</a>
+- <a href="https://www.linkedin.com/in/guilherme-cally-541264200/">Guilherme</a>
+- <a href="https://www.linkedin.com/in/tiago-gandra-946a91198/">Tiago</a>
+- <a href="https://www.linkedin.com/in/">Igor</a>
 
 - [1. Visão Geral do Projeto](#1-visão-geral-do-projeto)
   - [1.1 Problema](#11-problema)
