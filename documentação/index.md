@@ -17,9 +17,13 @@
 
 ## Integrantes:
 
-- <a href="https://www.linkedin.com/in/">Aluno 1</a>
-- <a href="https://www.linkedin.com/in/">Aluno 2</a>
-- <a href="https://www.linkedin.com/in/">Aluno 3</a>
+- <a href="https://www.linkedin.com/in/victorazev/">Victor</a>
+- <a href="https://www.linkedin.com/in/daniel-ferreira-b74660340/">Daniel</a>
+- <a href="https://www.linkedin.com/in/pablofsc/">Pablo</a>
+- <a href="https://www.linkedin.com/in/gustavo-de-oliveira-teixeira-735565227/">Gustavo</a>
+- <a href="https://www.linkedin.com/in/guilherme-cally-541264200/">Guilherme</a>
+- <a href="https://www.linkedin.com/in/tiago-gandra-946a91198/">Tiago</a>
+- <a href="https://www.linkedin.com/in/">Igor</a>
 
 - [1. Visão Geral do Projeto](#1-visão-geral-do-projeto)
   - [1.1 Problema](#11-problema)
@@ -43,17 +47,88 @@
 
 ### 1.1 Problema
 
+&emsp;&emsp;A pesquisa sobre o problema que o seu negócio busca resolver é essencial para a validação da ideia. Identificar e compreender se há, de fato, um problema real e relevante permite confirmar a necessidade de uma solução no mercado. Esse entendimento é fundamental para construir um plano de negócios sólido e alinhado com as demandas dos potenciais clientes.
+
+&emsp;&emsp; O problema identificado é a manutenção de hábitos saudáveis.
+&emsp;&emsp; Na era que vivemos hoje, é muito fácil começar uma rotina de bons hábitos, nas redes sociais somos bombardeados com dicas, influencers que incentivam tais rotinas e que geralmente envolve em dormir 8 horas, aderir a um esporte, começar uma dieta e beber bastante água.
+&emsp;&emsp; Porem essa facilidade de começar tem um problema grande, que é a constância. Geralmente as pessoas ficam nessas rotinas num período de 1 semana a 1 mês e vão com o tempo largando cada tentativa de mudança de habito proposta e voltando a “estaca zero”.
+&emsp;&emsp; Assim sendo, observa-se a necessidade de desenvolver uma solução que não só atraia o usuário a baixar o aplicativo, mas como também manter ele engajado para assim possibilitar a manutenção desses hábitos.
+
 #### 1.1.1 Análise do Problema
 
 #### 1.1.2 Análise do Cenário (Matriz SWOT)
+
+&emsp;&emsp; A análise SWOT é uma ferramenta de gestão utilizada para avaliar um projeto, produto ou empresa. Consiste em identificar e analisar os pontos fortes e fracos internos, assim como as oportunidades e ameaças presentes no ambiente externo. Essa análise permite ter uma visão clara do cenário atual, identificar os principais desafios e oportunidades e tomar decisões mais estratégicas para alcançar os objetivos desejados.
+
+<div align="center">
+  <sub>Figura X: Matriz SWOT</sub>
+  <img src="./imagens/Neutral SWOT Analysis Template.png" width="100%">
+  <sup>Fonte: Os autores (2024)</sup>
+</div>
+
+# Forças:
+- Feedback contínuo com a análise de dados do usuário: através dos dados do usuário
+será gerado uma análise gráfica para o usuário ver o seu progresso.
+- Aplicação gratuita: não será cobrado para utilizar a aplicação.
+- Induz o usuário a compartilhar o seu progresso: seja no meio social compartilhando
+com seus amigos instigando eles a participarem e utilizarem o aplicativo juntos e
+também meio de status onde a pessoa posta a análise gráfica numa rede social gerando
+engajamento gratuito.
+- Aplicação intuitiva: será desenvolvida pensando em todas as habilidades tecnologia da
+sociedade para atender principalmente os usuários básicos de tecnologia.
+
+# Fraqueza:
+- Equipe de desenvolvimento inexperiente: A falta experiência pode levar a atrasos e
+dificuldade no desenvolvimento do projeto.
+- Dependência de investidores: Necessidade de arrecadar recursos pode limitar a
+autonomia do negócio e direcionar a decisão do negócio para os investidores.
+- Custo de manutenção e desenvolvimento: Custos elevados para desenvolvimento
+podem comprometer ou atrasar o projeto.
+
+# Oportunidades:
+- Público alvo abrangente na sociedade e crescente: Permite explorar diferentes
+segmentos e nichos, aumentando a chance de alcançar mais usuários.
+- Engajamento do negócio: Fortalece o negócio e facilita a geração de indicações,
+impulsionando o crescimento do seu negócio.
+- Parcerias com empresas e influenciadores: União com empresas e influenciadores
+relevantes, alcançando um público maior e mais segmentado.
+- Expansão para outros mercados: Explorar novas áreas e fortalecer sua posição no
+mercado.
+
+# Ameaças:
+- Mercado competitivo: Existem outras aplicações com propósitos parecidos
+- Perda de interesse do usuário no produto: Usuário pode se cansar com o tempo
+- Tendência volátil: As tendências da sociedade variam com o tempo e isso pode afetar
+o alcance do aplicativo
+- Barreira social: Dificuldade de adesão do aplicativo pela sociedade.
 
 ## 2. Proposta da Solução
 
 ### 2.1 Descritivo Geral da Solução
 
+- A solução para o problema apresentado consiste no desenvolvimento do GymSpike, um aplicativo mobile/web projetado para auxiliar os usuários a não apenas iniciarem, mas também manterem hábitos saudáveis de forma consistente e motivadora. Reconhecendo a dificuldade em sustentar a constância em rotinas saudáveis, o GymSpike utiliza elementos de gamificação e interação social para criar um ambiente engajador e recompensador.
+
+- O aplicativo oferecerá desafios personalizados, recompensas por metas alcançadas e um sistema de pontos que transforma o progresso do usuário em conquistas visíveis. Para reforçar o engajamento, o GymSpike contará com um sistema de amigos, onde usuários poderão acompanhar o desempenho uns dos outros, participar de competições saudáveis e compartilhar realizações. Além disso, um leaderboard incentivará a competitividade ao posicionar os usuários com base no cumprimento de suas metas, promovendo motivação constante.
+
+- A interface do GymSpike será simples e intuitiva, permitindo que o usuário planeje seus hábitos, como atividades físicas, hidratação e sono, além de monitorar seu progresso diário e semanal. Relatórios visuais ajudarão a demonstrar a evolução ao longo do tempo, reforçando a importância de pequenas ações diárias para grandes mudanças.
+
+- Por fim, a solução proposta busca não apenas atrair usuários, mas também oferecer ferramentas e estímulos contínuos para que eles consigam transformar seus objetivos iniciais em hábitos duradouros, superando a dificuldade comum de manter a constância e promovendo um impacto positivo em sua saúde e bem-estar.
+
 ### 2.2 Proposta Tecnológica
 
 ### 2.3 Proposta de Valor (Value Proposition Canvas)
+
+&emsp;&emsp;O Canvas de Proposta de Valor é uma ferramenta visual que ajuda empresas a criar, analisar e refinar suas propostas de valor. Ele faz parte do Modelo de Negócio Canvas (Business Model Canvas), desenvolvido por Alexander Osterwalder, e se concentra em identificar e entender os clientes e suas necessidades, para oferecer produtos e serviços que atendam essas demandas de maneira eficaz.
+
+&emsp;&emsp;Diante do exposto, utilizando a metodologia do Canvas proposta de valor no projeto GymSparks faz com que percebamos as dificuldades e necessidades do cliente. Logo, em contrapartida dessas adversidades,podemos traçar um desenvolvimento incisivo de uma solução que possa agregar valores ao cliente.
+
+<div align="center">
+  <sub>Figura X: Canvas de Valor</sub>
+  <img src="./imagens/Canvas de Valor.png" width="100%">
+  <sup>Fonte: Os autores (2024)</sup>
+</div>
+
+&emsp;&emsp;Diante do exposto, utilizando a metodologia do Canvas proposta de valor no projeto GymSparks faz com que percebamos as dificuldades e necessidades do cliente. Logo, em contrapartida dessas adversidades,podemos traçar um desenvolvimento incisivo de uma solução que possa agregar valores ao cliente.
 
 ### 2.4 Matriz de Risco
 
@@ -61,14 +136,184 @@
 
 ### 3.1 Perfis de Usuários
 
+&emsp;&emsp; O **perfil de usuário** refere-se à descrição detalhada dos tipos de usuários que irão interagir com o sistema, produto ou serviço em desenvolvimento. Essa seção da documentação serve para entender quem são os usuários, suas necessidades, expectativas e como eles irão utilizar o produto.
+
+#### Usuários do aplicativo
+&emsp;&emsp;Usuários que irão utilizar o aplicativo:
+- Iniciante
+  - Descrição: Pessoa começando a prática de exercícios, sem experiência.
+  - Necessidades: gamificação para motivação, análises detalhadas, desafios acessíveis.
+- Avançado
+  - Descrição: Usuário com experiência em exercícios, busca aprimorar e manter engajamento.
+  - Necessidades: Desafios competitivos, análises detalhadas, rankings.
+#### Usuários administrativos ou parceiros
+&emsp;&emsp;Usuários que não irão utilizar o app como praticante:
+- Administrador/Treinador
+  - Descrição: Profissional que gerencia usuários ou fornece planos e conteúdos.
+  - Necessidades: Gerenciamento de conteúdo, monitoramento de progresso, comunicação com usuários.
+- Parceiro/Empresa
+  - Descrição: Marca ou organização que deseja promover serviços ou produtos relacionados a exercícios.
+  - Necessidades: Conectar-se com usuários, promover campanhas de marketing, obter insights de engajamento.
+
 ### 3.2 Personas
 
+&emsp;&emsp;Persona é a representação fictícia do seu cliente ideal. É baseada em dados reais sobre comportamento e características demográficas dos seus clientes. Apresenta, também, uma criação de suas histórias pessoais, motivações, objetivos, desafios e preocupações.
+
+Persona 1 – Ricardo 
+Emprego: Vendedor
+Idade: 35 anos
+Gênero: Masculino
+Educação: Graduado em administração.
+Mídias: facebook e Youtube.
+Objetivos: Crescer pessoalmente, profissionalmente e obter uma rotina saudável
+Desafios: Criar uma rotina saudável.
+Como minha empresa pode ajuda-la : Vamos produzir um aplicativo que vai conseguir criar uma rotina saudável do 0 e engaja-lo para continuar nela.
+
+Persona 2 - Sayuri
+Emprego: Home Office
+Idade:  23 anos
+Gênero: Feminino 
+Educação: Graduando em publicidade
+Mídias: Instagram, X e Linkedin.
+Objetivos: Emagrecer, se identificar com um esporte e se sentir confiante com o próprio corpo.
+Desafios: manter uma rotina saudável e parar de trocar a cada 3 meses de esporte.
+Como minha empresa pode ajuda-la: Orientaremos ela no esporte que ela optar por fazer e realizaremos engajamentos para ela manter a rotina saudável e a adesão ao esporte escolhido.
+
 ### 3.3 User Stories
+
+&emsp;&emsp; User Stories são uma ferramenta essencial em metodologias ágeis para descrever funcionalidades do ponto de vista do usuário. Logo, ajudam a manter o foco nas necessidades e expectativas do usuário final, garantindo que o produto entregue realmente atenda às suas demandas.
+
+- **Como** um usuário, **quero** me cadastrar no sistema **para** acessar todas as funcionalidades.
+  - Relacionado ao RF01: "O sistema deve permitir o cadastro de usuários".
+
+- **Como** um usuário, **quero** fazer login no sistema **para** acessar minha conta com segurança.
+  - Relacionado ao RF02: "Permitir login (autenticação) do usuário".
+
+- **Como** um usuário, **quero** editar minhas informações pessoais **para** mantê-las atualizadas.
+  - Relacionado ao RF03: "Editar informações do usuário".
+
+- **Como** um usuário, **quero** visualizar o perfil de outros usuários **para** conhecer mais sobre eles.
+  - Relacionado ao RF04: "Exibir perfil de outros usuários".
+
+- **Como** um usuário, **quero** me conectar com outros usuários **para** ampliar minha rede de amigos.
+  - Relacionado ao RF05: "Permitir conexão entre usuários".
+
+- **Como** um usuário, **quero** criar grupos de amigos **para** interagir com eles de forma organizada.
+  - Relacionado ao RF06: "Criar grupos de amigos".
+
+- **Como** um usuário, **quero** receber atividades recorrentes **para** criar motivações nas minhas rotinas.
+  - Relacionado ao RF07: "O sistema deve oferecer atividades diárias e semanais"
+
+- **Como** um usuário, **quero** visualizar tabelas de ranks **para** poder comparar com a comunidade de amigos.
+  - Relacionado ao RF08: "O usuário poderá visualizar o ranking geral"
+
+- **Como** um usuário, **quero** receber recompensas por completar atividades **para** aumentar minhas motivações.
+  - Relacionado ao RF09: "O usuário receberá recompensas de acordo com a conclusão de atividades"
+
+- **Como** um usuário, **quero** ter um progresso de dias **para** manter motivações nas minhas rotinas.
+  - Relacionado ao RF10: "O usuário terá uma sequência de dias de atividades"
+
+- **Como** um usuário, **quero** realizar atividades em conjunto **para** ter maior interação social nas minhas rotinas.
+  - Relacionado ao RF11: "O usuário poderá realizar atividades em conjunto com um grupo de amigos"
+
+- **Como** um usuário, **quero** visualizar o meu histórico de atividades **para** poder ter um parâmetro de evolução.
+  - Relacionado ao RF12: "O poderá visualizar seu histórico de atividades"
+
+- **Como** um usuário, **quero** compartilhar sua análise de atividades na comunidade **para** motivar e participar da comunidade.
+  - Relacionado ao RF13: "O sistema deve oferecer o compartilhamento na comunidade interna"
+
+- **Como** um usuário, **quero** compartilhar o feedback em aplicações externas **para** ter uma interação social maior.
+  - Relacionado ao RF14: "O sistema deve oferecer o compartimento em aplicações externas"
 
 ## 4. Requisitos
 
 ### 4.1 Requisitos Funcionais
 
+&emsp;&emsp; Os requisitos funcionais são descrições de serviços que o sistema deve disponibilizar, descrevendo as funcionalidade ou serviços que o sistema deve fornecer aos usuários finais. Abaixo estão listados os requisitos funcionais da aplicação web a ser desenvolvida, subdivididos nos três principais pilares do projeto.
+
+#### 4.1.1 Cadastro e gerenciamento de dados:
+| Identificador | Descrição                                                               | Prioridade |
+| ------------- | ----------------------------------------------------------------------- | ---------- |
+| RF01          | O sistema deve permitir o cadastro de usuários                          | Alta       |
+| RF02          | Permitir login(autenticação) do usuário                                 | Alta       |
+| RF03          | Editar informações do usuário                                           | Alta       |
+| RF04          | Exibir perfil de outros usuários                                        | Média      |
+| RF05          | Permitir conexão entre usuários                                         | Média      |
+| RF06          | Criar grupos de amigos                                                  | Baixa      |
+
+#### 4.1.2 Sistema de gamificação:
+| Identificador | Descrição                                                               | Prioridade |
+| ------------- | ----------------------------------------------------------------------- | ---------- |
+| RF07          | O sistema deve oferecer atividades diárias e semanais                   | Alta       |
+| RF08          | O usuário poderá visualizar o ranking geral                             | Média      |
+| RF09          | O usuário receberá recompensas de acordo com a conclusão de atividades  | Baixa      |
+| RF10          | O usuário terá uma sequência de dias de atividades                      | Alta       |
+| RF11          | O usuário poderá realizar atividades em conjunto com um grupo de amigos | Baixa      |
+
+#### 4.1.3 Feedback e análise de progresso:
+| Identificador | Descrição                                                               | Prioridade |
+| ------------- | ----------------------------------------------------------------------- | ---------- |
+| RF12          | O usuário poderá visualizar seu histórico de atividades                 | Alta       |
+| RF13          | O usuário poderá compartilhar sua análise de atividades na comunidade   | Baixa      |
+| RF14          | O usuário poderá compartilhar o feedback em aplicações externas         | Baixa      |
+
 ### 4.2 Requisitos não Funcionais
 
+#### RNF-001 Desempenho
+- Tempo de resposta: login, leitura e escrita.
+- Capacidade de processamento: requisições simultâneas.
+
+#### RNF-002 Escalabilidade.
+- Suportar vários usuários ativos.
+- O banco de dados deve suportar crescimento contínuo.
+
+#### RNF-003 Confiabilidade
+- Disponibilidade.
+- Integridade dos dados.
+
+#### RNF-004 Segurança
+- Autenticação.
+- Armazenamento de dados: Dados sensíveis devem ser criptografados.
+- Controle de acesso. 
+
+#### RNF-005 Manutenibilidade
+- O código-fonte deve seguir padrões e convenções claras para facilitar futuras atualizações.
+- O sistema deve ser modular, permitindo a substituição ou melhoria de componentes sem impacto significativo nas demais partes.
+- Logs devem ser detalhados e acessíveis para facilitar diagnósticos e auditorias.
+
+#### RNF-006 Portabilidade
+- Multiplataforma.
+- Permitir migração de fornecedor de banco de dados.
+
+#### RNF-007 Usabilidade
+- A interface deve ser intuitiva.
+
+#### RNF-008 Conformidade
+- O sistema deve estar em conformidade com regulamentações de proteção de dados.
+
 ### 4.3 Regra de Negócio
+
+&emsp;&emsp;É uma diretriz ou restrição específica do domínio de negócio que orienta o funcionamento do sistema para atender às políticas organizacionais. Elas definem como os dados devem ser manipulados e as operações que são permitidas ou obrigatórias em situações específicas. Por exemplo, uma regra de negócio pode ser "clientes menores de 18 anos não podem realizar compras" ou "cada cliente pode solicitar no máximo três reembolsos por mês". As regras de negócio são essenciais para alinhar o sistema às necessidades e objetivos estratégicos da organização.
+
+Cadastro e gerenciamento de dados
+1.	RN01: O cadastro de usuários deverá incluir campos obrigatórios, como nome completo, e-mail válido e senha segura.
+2.	RN02: O sistema deve validar os dados no momento do cadastro, impedindo duplicidade de e-mails e aplicando validações de formato.
+3.	RN03: Somente usuários autenticados poderão acessar funcionalidades além do cadastro e recuperação de senha.
+4.	RN04: Usuários poderão editar informações no perfil, mas e-mails e senhas alterados devem passar por revalidação.
+5.	RN05: A exibição de perfis de outros usuários será limitada a informações públicas ou compartilhadas, respeitando configurações de privacidade.
+6.	RN06: Para conexões entre usuários, será necessário consentimento mútuo para a criação de vínculo.
+7.	RN07: A criação de grupos será limitada a usuários autenticados, e o grupo deverá ter um nome único.
+________________________________________
+Gamificação
+1.	RN08: As atividades diárias e semanais devem ser disponibilizadas em horários pré-definidos e variáveis para manter o engajamento.
+2.	RN09: A pontuação no ranking geral será atualizada em tempo real com base nas atividades concluídas.
+3.	RN10: Recompensas concedidas ao usuário serão armazenadas em um inventário virtual e não poderão ser convertidas em dinheiro.
+4.	RN11: A sequência de dias de atividades será resetada caso o usuário não realize uma atividade dentro do prazo especificado.
+5.	RN12: Atividades em grupo devem ser iniciadas por usuários dentro de um mesmo grupo previamente criado.
+________________________________________
+Feedback e análise de progresso
+1.	RN13: O histórico de atividades deve ser armazenado e acessível apenas pelo usuário.
+2.	RN14: A análise de atividades compartilhada na comunidade será moderada para garantir adequação de conteúdo.
+3.	RN15: O feedback compartilhado em aplicações externas deve ser padronizado e conter apenas informações permitidas pelo usuário.
+4.	RN16: A análise de progresso do usuário deve incluir indicadores visuais (gráficos ou métricas) baseados no desempenho individual.
+
