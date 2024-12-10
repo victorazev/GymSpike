@@ -117,7 +117,9 @@ o alcance do aplicativo
 
 ### 3.1 Perfis de Usuários
 
-# Usuários do aplicativo
+&emsp;&emsp; O **perfil de usuário** refere-se à descrição detalhada dos tipos de usuários que irão interagir com o sistema, produto ou serviço em desenvolvimento. Essa seção da documentação serve para entender quem são os usuários, suas necessidades, expectativas e como eles irão utilizar o produto.
+
+#### Usuários do aplicativo
 &emsp;&emsp;Usuários que irão utilizar o aplicativo:
 - Iniciante
   - Descrição: Pessoa começando a prática de exercícios, sem experiência.
@@ -125,7 +127,7 @@ o alcance do aplicativo
 - Avançado
   - Descrição: Usuário com experiência em exercícios, busca aprimorar e manter engajamento.
   - Necessidades: Desafios competitivos, análises detalhadas, rankings.
-# Usuários administrativos ou parceiros
+#### Usuários administrativos ou parceiros
 &emsp;&emsp;Usuários que não irão utilizar o app como praticante:
 - Administrador/Treinador
   - Descrição: Profissional que gerencia usuários ou fornece planos e conteúdos.
