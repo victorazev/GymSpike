@@ -106,6 +106,14 @@ o alcance do aplicativo
 
 ### 2.1 Descritivo Geral da Solução
 
+- A solução para o problema apresentado consiste no desenvolvimento do GymSpike, um aplicativo mobile/web projetado para auxiliar os usuários a não apenas iniciarem, mas também manterem hábitos saudáveis de forma consistente e motivadora. Reconhecendo a dificuldade em sustentar a constância em rotinas saudáveis, o GymSpike utiliza elementos de gamificação e interação social para criar um ambiente engajador e recompensador.
+
+- O aplicativo oferecerá desafios personalizados, recompensas por metas alcançadas e um sistema de pontos que transforma o progresso do usuário em conquistas visíveis. Para reforçar o engajamento, o GymSpike contará com um sistema de amigos, onde usuários poderão acompanhar o desempenho uns dos outros, participar de competições saudáveis e compartilhar realizações. Além disso, um leaderboard incentivará a competitividade ao posicionar os usuários com base no cumprimento de suas metas, promovendo motivação constante.
+
+- A interface do GymSpike será simples e intuitiva, permitindo que o usuário planeje seus hábitos, como atividades físicas, hidratação e sono, além de monitorar seu progresso diário e semanal. Relatórios visuais ajudarão a demonstrar a evolução ao longo do tempo, reforçando a importância de pequenas ações diárias para grandes mudanças.
+
+- Por fim, a solução proposta busca não apenas atrair usuários, mas também oferecer ferramentas e estímulos contínuos para que eles consigam transformar seus objetivos iniciais em hábitos duradouros, superando a dificuldade comum de manter a constância e promovendo um impacto positivo em sua saúde e bem-estar.
+
 ### 2.2 Proposta Tecnológica
 
 ### 2.3 Proposta de Valor (Value Proposition Canvas)
