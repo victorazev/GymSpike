@@ -47,6 +47,13 @@
 
 ### 1.1 Problema
 
+&emsp;&emsp;A pesquisa sobre o problema que o seu negócio busca resolver é essencial para a validação da ideia. Identificar e compreender se há, de fato, um problema real e relevante permite confirmar a necessidade de uma solução no mercado. Esse entendimento é fundamental para construir um plano de negócios sólido e alinhado com as demandas dos potenciais clientes.
+
+&emsp;&emsp; O problema identificado é a manutenção de hábitos saudáveis.
+&emsp;&emsp; Na era que vivemos hoje, é muito fácil começar uma rotina de bons hábitos, nas redes sociais somos bombardeados com dicas, influencers que incentivam tais rotinas e que geralmente envolve em dormir 8 horas, aderir a um esporte, começar uma dieta e beber bastante água.
+&emsp;&emsp; Porem essa facilidade de começar tem um problema grande, que é a constância. Geralmente as pessoas ficam nessas rotinas num período de 1 semana a 1 mês e vão com o tempo largando cada tentativa de mudança de habito proposta e voltando a “estaca zero”.
+&emsp;&emsp; Assim sendo, observa-se a necessidade de desenvolver uma solução que não só atraia o usuário a baixar o aplicativo, mas como também manter ele engajado para assim possibilitar a manutenção desses hábitos.
+
 #### 1.1.1 Análise do Problema
 
 #### 1.1.2 Análise do Cenário (Matriz SWOT)
