@@ -317,3 +317,74 @@ Feedback e análise de progresso
 3.	RN15: O feedback compartilhado em aplicações externas deve ser padronizado e conter apenas informações permitidas pelo usuário.
 4.	RN16: A análise de progresso do usuário deve incluir indicadores visuais (gráficos ou métricas) baseados no desempenho individual.
 
+## 5. Banco de dados
+
+### 5.1 Tecnologia escolhida
+
+&emsp;&emsp;A tecnologia de banco de dados escolhida para o projeto foi o banco de dado não relacional devido a sua flexibilidade e escalabilidade através do seu conceito de trabalhar com coleções e documentos o que atenderá totalmente as necessidades do projeto visto que a sua estrutura deve comportar redundâncias para uma maior velocidade quando comparado com o modelo relacional que necessitaria de operações para chegar no mesmo resultado, por exemplo, será necessário para a criação de grupos e alocar os dados das atividades realizadas no grupo mas também no próprio perfil do usuário.
+
+### 5.2 Modelagem do banco de dados
+
+&emsp;&emsp;Por não se tratar de um uso de tabelas, a modelagem do banco de dados pode ser tratada numa forma de notação o de objeto.
+
+COLLECTION userList CONTAINS UserListDocument
+
+interface UserListDocument {
+  email: string;
+  username: string;
+  firstName: string;
+  lastName: string;
+  phone: string;
+  gender: 'F' | 'M';
+  passwordHash: string;
+  lastAccess: Date;
+  streak: number;
+  admin: bool;
+  
+  activityHistory: COLLECTION;
+  activityGoals: COLLECTION;
+  friends: COLLECTION;
+  groups: COLLECTION;
+}
+
+COLLECTION userList/$id/activityHistory CONTAINS UserActivityHistoryDocument
+
+interface UserActivityHistoryDocument {
+  exerciseType: 'RUNNING' | 'WEIGHTLIFTING' | 'TREADMILL' | 'SWIMMING';
+  timestampStart: Date;
+  timestampEnd: Date;
+  score: number;
+  avgHeartbeat: number;
+  estimatedCalories: number;
+}
+
+COLLECTION userList/$id/activityGoals CONTAINS UserActivityGoalsDocument
+
+interface UserActivityGoalsDocument {
+  
+}
+
+COLLECTION userList/$id/friends CONTAINS UserFriendListDocument
+
+interface UserFriendListDocument {
+  addedAt: Date;
+  userReference: REFERENCES UserListDocument;
+}
+
+COLLECTION userList/$id/groups CONTAINS UserGroupListDocument
+
+interface UserGroupListDocument {
+  createdAt: Date;
+  createdBy: REFERENCES UserListDocument;
+  
+  members: COLLECTION;
+  // activity: COLLECTION;
+}
+
+COLLECTION userList/$id/groups/$groupId/members CONTAINS GroupMembersList
+
+interface GroupMembersListDocument {
+  addedAt: Date;
+  addedBy: REFERENCES userListDocument;
+  userReference: REFERENCES userListDocument;
+}
