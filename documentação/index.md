@@ -346,7 +346,8 @@ interface UserListDocument {
   friends: COLLECTION;
   groups: COLLECTION;
 }
-
+```
+```
 COLLECTION userList/$id/activityHistory CONTAINS UserActivityHistoryDocument
 
 interface UserActivityHistoryDocument {
@@ -363,14 +364,16 @@ COLLECTION userList/$id/activityGoals CONTAINS UserActivityGoalsDocument
 interface UserActivityGoalsDocument {
   
 }
-
+```
+```
 COLLECTION userList/$id/friends CONTAINS UserFriendListDocument
 
 interface UserFriendListDocument {
   addedAt: Date;
   userReference: REFERENCES UserListDocument;
 }
-
+```
+```
 COLLECTION userList/$id/groups CONTAINS UserGroupListDocument
 
 interface UserGroupListDocument {
@@ -380,7 +383,8 @@ interface UserGroupListDocument {
   members: COLLECTION;
   // activity: COLLECTION;
 }
-
+```
+```
 COLLECTION userList/$id/groups/$groupId/members CONTAINS GroupMembersList
 
 interface GroupMembersListDocument {
