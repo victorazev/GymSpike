@@ -358,7 +358,8 @@ interface UserActivityHistoryDocument {
   avgHeartbeat: number;
   estimatedCalories: number;
 }
-
+```
+```
 COLLECTION userList/$id/activityGoals CONTAINS UserActivityGoalsDocument
 
 interface UserActivityGoalsDocument {
