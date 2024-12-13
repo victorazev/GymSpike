@@ -363,7 +363,9 @@ interface UserActivityHistoryDocument {
 COLLECTION userList/$id/activityGoals CONTAINS UserActivityGoalsDocument
 
 interface UserActivityGoalsDocument {
-  
+  timestampStart: Date;
+	timestampEnd: Date;
+	score: number;
 }
 ```
 ```
