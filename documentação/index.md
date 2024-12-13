@@ -326,7 +326,7 @@ Feedback e análise de progresso
 ### 5.2 Modelagem do banco de dados
 
 &emsp;&emsp;Por não se tratar de um uso de tabelas, a modelagem do banco de dados pode ser tratada numa forma de notação o de objeto.
-
+```
 COLLECTION userList CONTAINS UserListDocument
 
 interface UserListDocument {
@@ -388,3 +388,4 @@ interface GroupMembersListDocument {
   addedBy: REFERENCES userListDocument;
   userReference: REFERENCES userListDocument;
 }
+```
