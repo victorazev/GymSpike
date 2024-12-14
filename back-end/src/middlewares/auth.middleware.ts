@@ -1,5 +1,8 @@
 import { Request, Response, NextFunction } from 'express'; // Importa tipos do Express para as requisições, respostas e funções de middleware
 import jwt from 'jsonwebtoken'; // Importa o pacote jwt para criar e verificar tokens JWT
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 // Interface personalizada para requisições autenticadas, estendendo a requisição padrão do Express
 export interface AuthenticatedRequest extends Request {
