@@ -321,7 +321,7 @@ Feedback e análise de progresso
 
 ### 5.1 Tecnologia escolhida
 
-&emsp;&emsp;A tecnologia de banco de dados escolhida para o projeto foi o banco de dado não relacional devido a sua flexibilidade e escalabilidade através do seu conceito de trabalhar com coleções e documentos o que atenderá totalmente as necessidades do projeto visto que a sua estrutura deve comportar redundâncias para uma maior velocidade quando comparado com o modelo relacional que necessitaria de operações para chegar no mesmo resultado, por exemplo, será necessário para a criação de grupos e alocar os dados das atividades realizadas no grupo mas também no próprio perfil do usuário.
+&emsp;&emsp;A tecnologia de banco de dados escolhida para o projeto foi a Não Relacional, devido à sua flexibilidade e escalabilidade que advêm do seu modelo de coleções e documentos no lugar de tabelas. O uso desse modelo coloca o projeto em linha com padrões modernos de desenvolvimento, em que o NoSQL ganha cada vez mais espaço, e seu modelo de armazenamento de dados será capaz de representar bem as informações que alimentarão o aplicativo. Além disso, o uso de plataformas em nuvem como o Mongo Atlas, aliado a uma biblioteca que forneça uma API para manipulação, como o Mongoose, facilitará o desenvolvimento e manutenção do back-end, simplificando a etapa de configuração e modelagem do banco de dados, uma das mais importantes no desenvolvimento de qualquer aplicação.
 
 ### 5.2 Modelagem do banco de dados
 
