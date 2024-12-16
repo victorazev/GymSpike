@@ -132,6 +132,25 @@ o alcance do aplicativo
 
 ### 2.4 Matriz de Risco
 
+Matriz de Risco
+
+&emsp;&emsp;Uma matriz de risco é uma ferramenta de gestão utilizada para identificar, avaliar e priorizar os riscos associados a um projeto, processo ou atividade. Ela organiza os riscos em uma tabela bidimensional onde:
+
+- Um dos eixos representa a probabilidade (ou frequência) de ocorrência do risco, variando de "muito baixo" a "muito alto".
+- O outro eixo representa o impacto ou a severidade do risco, que pode ir de "mínimo" a "catastrófico".
+
+&emsp;&emsp;Cada risco é colocado na matriz com base na sua probabilidade e impacto, resultando em uma visualização clara que ajuda a:
+
+- Identificar quais riscos são mais críticos e necessitam de atenção imediata.
+- Avaliar a prioridade de cada risco para o gerenciamento, permitindo uma alocação eficiente de recursos.
+- Mitigar ou planejar respostas apropriadas para cada risco, desde a prevenção até a contingência.
+
+&emsp;&emsp;Essa matriz facilita a comunicação sobre riscos entre as partes interessadas e auxilia na tomada de decisões informadas ao longo do ciclo de vida do projeto ou operação.
+
+![image](https://github.com/user-attachments/assets/c39c011f-1890-4e89-93b7-20079e67ec7e)
+
+
+
 ## 3. Análise de experiência do usuário
 
 ### 3.1 Perfis de Usuários
