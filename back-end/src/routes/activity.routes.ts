@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { createActivity, getActivities, editActivity, removeActivity } from '../controllers/activity.controller';
+import { createActivity, getUserActivities, getActivityById } from '../controllers/activity.controller';
 import { authenticate } from '../middlewares/auth.middleware';
 
 const router = Router();
@@ -8,12 +8,9 @@ const router = Router();
 router.post('/:userId/activities', authenticate, createActivity);
 
 // Obter todas as atividades de um usuário
-router.get('/:userId/activities', authenticate, getActivities);
+router.get('/:userId/activities', authenticate, getUserActivities);
 
-// Atualizar uma atividade específica
-router.put('/:userId/activities/:activityId', authenticate, editActivity);
-
-// Excluir uma atividade específica
-router.delete('/activities/:activityId', authenticate, removeActivity);
+// Obter atividade pelo id da atividade
+router.get('/:userId/activities/:activityId', authenticate, getActivityById);
 
 export default router;

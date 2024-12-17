@@ -13,7 +13,7 @@ export interface UserListDocument extends Document {
   lastAccess: Date;
   streak: number;
   admin: boolean;
-  activityHistory?: any[];
+  activityHistory: mongoose.Types.ObjectId[];
   activityGoals?: any[];
   friends?: mongoose.Types.ObjectId[]; // Lista de IDs de friendsList
   groups?: any[];
@@ -32,7 +32,7 @@ const UserListSchema = new Schema<UserListDocument>({
   lastAccess: { type: Date, default: Date.now },
   streak: { type: Number, default: 0 },
   admin: { type: Boolean, default: false },
-  activityHistory: { type: Array, default: [] },
+  activityHistory: [{ type: mongoose.Schema.Types.ObjectId, ref: 'ActivityHistory', default: [] }],
   activityGoals: { type: Array, default: [] },
   friends: [{ type: mongoose.Schema.Types.ObjectId, ref: 'friendsList' }], // Relacionamento com friendsList
   groups: { type: Array, default: [] },
