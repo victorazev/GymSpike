@@ -1,6 +1,7 @@
 import express from 'express'; // Importa o Express, que é o framework usado para criar o servidor
 import userRoutes from './routes/user.routes'; // Importa as rotas de usuário definidas em outro arquivo
 import activityRoutes from './routes/activity.routes';
+import friendRoutes from './routes/friendList.routes';
 
 const app = express(); // Cria uma instância da aplicação Express
 
@@ -15,6 +16,7 @@ app.get('/', (req, res) => {
 // Usa as rotas de usuários a partir do caminho '/api/users'
 app.use('/api/users', userRoutes);
 app.use('/api/users', activityRoutes);
+app.use('/api/users', friendRoutes)
 
 // Exporta a aplicação para ser usada em outro arquivo (por exemplo, para iniciar o servidor)
 export default app;
