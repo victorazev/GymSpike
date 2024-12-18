@@ -3,6 +3,7 @@ import userRoutes from './routes/user.routes'; // Importa as rotas de usuário d
 import activityRoutes from './routes/activity.routes';
 import activityGoalsRoutes from './routes/activityGoals.routes';
 import feedBackRoutes from './routes/feedback.routes';
+import friendRoutes from './routes/friendList.routes';
 
 const app = express(); // Cria uma instância da aplicação Express
 
@@ -19,6 +20,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/users', activityRoutes);
 app.use('/api/users', activityGoalsRoutes);
 app.use('/api/users', feedBackRoutes);
+app.use('/api/users', friendRoutes)
 
 // Exporta a aplicação para ser usada em outro arquivo (por exemplo, para iniciar o servidor)
 export default app;
