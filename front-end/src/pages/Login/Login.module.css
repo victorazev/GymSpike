@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; /* Centraliza verticalmente */
+  background-color: #1A1A1A; /* Fundo preto */
+  padding: 16px;
+}
+
+h2 {
+  color: #F4A100; /* Cor laranja */
+  font-size: 2rem;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px; /* Define largura máxima */
+  gap: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #DDD; /* Fundo cinza claro */
+  color: #000; /* Texto preto */
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.6); /* Placeholder com opacidade */
+}
+
+button {
+  margin-top: 8px; /* Espaçamento entre os botões */
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .form {
+    gap: 20px;
+  }
+
+  input {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+  }
+}
