@@ -20,8 +20,6 @@ export const addActivityGoals = async (
 		...activityData,
 		userReference: userId,
 	});
-	console.log(userId);
-	console.log(newActivity);
 
 	// Atualiza a lista de atividades no usuário
 	await UserListModel.findByIdAndUpdate(
