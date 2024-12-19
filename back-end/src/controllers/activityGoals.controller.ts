@@ -37,7 +37,6 @@ export const createActivity = async (
 
 		res.status(201).json(newActivity);
 	} catch (error) {
-		console.log(error);
 		next(error);
 	}
 };
