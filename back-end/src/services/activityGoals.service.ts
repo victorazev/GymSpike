@@ -8,31 +8,35 @@ import { UserListModel } from '../models/user.model'; // Ajuste o caminho confor
 export const addActivityGoals = async (
 	userId: string,
 	activityData: Partial<UserActivityGoalsDocument>,
-) => {
-	const activity = new activityGoalsModel(activityData);
-
+): Promise<UserActivityGoalsDocument> => {
 	// Encontre o usuário pelo ID
 	const user = await UserListModel.findById(userId);
 	if (!user) {
 		throw new Error('User not found');
 	}
 
-	// Garante que o campo activityHistory seja um array
-	if (!user.activityGoals) {
-		user.activityGoals = [];
-	}
+	// Cria a atividade e vincula ao usuário
+	const newActivity = await activityGoalsModel.create({
+		...activityData,
+		userReference: userId,
+	});
+	console.log(userId);
+	console.log(newActivity);
 
-	// Adicione a nova atividade ao campo `activityGoals`
-	user.activityGoals.push(activity);
-	await user.save();
+	// Atualiza a lista de atividades no usuário
+	await UserListModel.findByIdAndUpdate(
+		userId,
+		{ $push: { activityGoals: newActivity._id } },
+		{ new: true },
+	);
 
-	return activity;
+	return newActivity;
 };
 
 // Buscar atividades pelo ID do usuário
 export const getAllActivitiyGoalsByUser = async (
 	userId: string,
-) => {
+): Promise<UserActivityGoalsDocument[]> => {
 	// Encontre o usuário pelo ID e retorne apenas o campo `activityGoals`
 	const user = await UserListModel.findById(userId).select(
 		'activityGoals',
@@ -41,8 +45,10 @@ export const getAllActivitiyGoalsByUser = async (
 		throw new Error('User not found');
 	}
 
-	// Retorne o histórico de atividades ou um array vazio
-	return user.activityGoals || [];
+	// Retorna o histórico de atividades
+	return await activityGoalsModel.find({
+		userReference: userId,
+	});
 };
 
 export const updateActivityGoals = async (
@@ -51,44 +57,28 @@ export const updateActivityGoals = async (
 	activityData: Partial<UserActivityGoalsDocument>,
 ) => {
 	const user = await UserListModel.findById(userId); // Busca pelo usuário informado
-
+	// Verifica se o usuário existe
 	if (!user) {
-		// Verifica se o usuário existe
 		throw new Error('User not found');
 	}
 
-	if (user.activityGoals?.length == 0) {
-		// Verifica se há atividades registradas no objeto do usuário
-		throw new Error(
-			'Este usuário não possui atividades registradas',
-		);
-	}
-
-	let activity = user.activityGoals?.find(
-		// Procura pela atividade informada dentro do objeto do usuário
-		(activity) => activity._id.toString() === activityId,
+	// Busca pela atividade informada
+	const activity = await activityGoalsModel.findById(
+		activityId,
 	);
-
+	// Verifica se a atividade informada existe
 	if (!activity) {
-		// Verifica se existe a tividade com o Id informado
-		throw new Error('Esta atividade não existe');
+		throw new Error('Activity not found');
 	}
 
-	activity = { ...activity, ...activityData };
-	// Manipula a atividade obtida através do banco, sobrescrevendo os dados novos
-
-	user.activityGoals = user.activityGoals?.filter(
-		// Retira a atividade desatualizada
-		(activity) => activity._id.toString() !== activityId,
+	// Busca a atividade e atauliza
+	await activityGoalsModel.findByIdAndUpdate(
+		activityId,
+		{ ...activityData },
+		{ new: true },
 	);
 
-	user.activityGoals?.push(activity);
-	// Adiciona a atividade atualizada
-
-	await user.save();
-	//Salva no banco de dados
-
-	return activity;
+	return { activityData };
 };
 
 export const deleteActivityGoals = async (
@@ -96,29 +86,24 @@ export const deleteActivityGoals = async (
 	activityId: string,
 ) => {
 	const user = await UserListModel.findById(userId); // Busca pelo usuário informado
-
+	// Verifica se o usuário existe
 	if (!user) {
-		// Verifica se o usuário existe
 		throw new Error('User not found');
 	}
 
-	if (user.activityGoals?.length == 0) {
-		// Verifica se há atividades registradas no objeto do usuário
-		throw new Error(
-			'Este usuário não possui atividades registradas',
-		);
-	}
-
-	let activity = user.activityGoals?.find(
-		// Procura pela atividade informada dentro do objeto do usuário
-		(activity) => activity._id.toString() === activityId,
+	// Busca pela atividade informada
+	const activity = await activityGoalsModel.findById(
+		activityId,
 	);
-
+	// Verifica se a atividade informada existe
 	if (!activity) {
-		// Verifica se existe a tividade com o Id informado
-		throw new Error('Esta atividade não existe');
+		throw new Error('Activity not found');
 	}
 
+	// Busca a atividade e deleta
+	await activityGoalsModel.findByIdAndDelete(activityId);
+
+	// Deleta a atividade dentro do documento do usuário
 	const deletion = (user.activityGoals =
 		user.activityGoals?.filter(
 			(activity) => activity._id.toString() !== activityId,

@@ -4,7 +4,7 @@ import {
 	getActivityGoals,
 	editActivityGoals,
 	removeActivityGoals,
-} from '../controllers/acitivityGoals.controller';
+} from '../controllers/activityGoals.controller';
 import { authenticate } from '../middlewares/auth.middleware';
 
 const router = Router();

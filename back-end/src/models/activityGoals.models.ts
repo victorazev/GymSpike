@@ -9,6 +9,7 @@ export interface UserActivityGoalsDocument extends Document {
 	timestampStart: Date;
 	timestampEnd: Date;
 	score: number;
+	userReference: mongoose.Schema.Types.ObjectId;
 }
 
 // Definindo o schema do histórico de metas, que será usado para criar o modelo de dados
@@ -18,6 +19,11 @@ const activityGoalsSchema =
 		timestampStart: { type: Date, required: true }, // Data e hora do início da meta, obrigatório
 		timestampEnd: { type: Date, required: true }, // Data e hora do fim da meta, obrigatório
 		score: { type: Number, required: true }, // Métrica do exercício realizado, obrigatório
+		userReference: {
+			type: mongoose.Schema.Types.ObjectId,
+			ref: 'UserList',
+			required: true,
+		}, // Referência ao documento do usuário
 	});
 
 // Criação do modelo do Mongoose, com o nome 'activityGoals' e o schema definido

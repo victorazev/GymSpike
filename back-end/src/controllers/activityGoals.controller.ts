@@ -1,4 +1,4 @@
-import { Request, Response } from 'express';
+import { Request, Response, NextFunction } from 'express';
 import {
 	addActivityGoals,
 	getAllActivitiyGoalsByUser,
@@ -10,23 +10,35 @@ import {
 export const createActivity = async (
 	req: Request,
 	res: Response,
+	next: NextFunction,
 ) => {
 	try {
-		const { userId } = req.params; // ID do usuário (passado na rota)
-		const activityData = req.body; // Dados da atividade
-
-		const activity = await addActivityGoals(
+		const {
 			userId,
-			activityData,
-		);
-		res.status(201).json({
-			message: 'Activity created successfully',
-			activity,
+			goalsAchieved,
+			timestampStart,
+			timestampEnd,
+			score,
+		} = req.body;
+
+		if (!userId || !timestampStart || !timestampEnd || !score) {
+			res
+				.status(400)
+				.json({ message: 'Missing required fields' });
+			return;
+		}
+
+		const newActivity = await addActivityGoals(userId, {
+			goalsAchieved,
+			timestampStart,
+			timestampEnd,
+			score,
 		});
+
+		res.status(201).json(newActivity);
 	} catch (error) {
-		res
-			.status(500)
-			.json({ error: 'Failed to create activity' });
+		console.log(error);
+		next(error);
 	}
 };
 
@@ -34,40 +46,55 @@ export const createActivity = async (
 export const getActivityGoals = async (
 	req: Request,
 	res: Response,
+	next: NextFunction,
 ) => {
 	try {
-		const { userId } = req.params; // ID do usuário
+		const { userId } = req.params;
+
+		if (!userId) {
+			res.status(400).json({ message: 'User ID is required' });
+			return;
+		}
 
 		const activities = await getAllActivitiyGoalsByUser(userId);
-		res.status(200).json({ activities });
+
+		res.status(200).json(activities);
 	} catch (error) {
-		res
-			.status(500)
-			.json({ error: 'Failed to retrieve activities' });
+		next(error);
 	}
 };
 
 export const editActivityGoals = async (
 	req: Request,
 	res: Response,
+	next: NextFunction,
 ) => {
 	try {
 		const { userId, activityId } = req.params; // ID do usuário e da atividade
-		const activityData = req.body; // Dados para atualizar
+		const {
+			goalsAchieved,
+			timestampStart,
+			timestampEnd,
+			score,
+		} = req.body;
 
 		const updatedActivity = await updateActivityGoals(
 			userId,
 			activityId,
-			activityData,
+			{
+				goalsAchieved,
+				timestampStart,
+				timestampEnd,
+				score,
+			},
 		);
+
 		res.status(200).json({
 			message: 'Activity updated successfully',
 			updatedActivity,
 		});
-	} catch (error: any) {
-		res.status(500).json({
-			error: error.message || 'Failed to update activity',
-		});
+	} catch (error) {
+		next(error);
 	}
 };
 
@@ -75,6 +102,7 @@ export const editActivityGoals = async (
 export const removeActivityGoals = async (
 	req: Request,
 	res: Response,
+	next: NextFunction,
 ) => {
 	try {
 		const { userId, activityId } = req.params; // ID da atividade
@@ -92,8 +120,6 @@ export const removeActivityGoals = async (
 			.status(200)
 			.json({ message: 'Activity deleted successfully' });
 	} catch (error) {
-		res
-			.status(500)
-			.json({ error: 'Failed to delete activity' });
+		next(error);
 	}
 };

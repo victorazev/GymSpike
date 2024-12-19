@@ -22,7 +22,7 @@ export interface UserListDocument extends Document {
 
 // Definindo o schema do usuário
 const UserListSchema = new Schema<UserListDocument>({
-  email: { type: String, required: true, unique: true },
+  email: { type: String, required: true, unique: true }, 
   username: { type: String, required: true },
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
@@ -32,8 +32,8 @@ const UserListSchema = new Schema<UserListDocument>({
   lastAccess: { type: Date, default: Date.now },
   streak: { type: Number, default: 0 },
   admin: { type: Boolean, default: false },
-  activityHistory: [{ type: mongoose.Schema.Types.ObjectId, ref: 'ActivityHistory', default: [] }],
-  activityGoals: { type: Array, default: [] },
+  activityHistory: [{ type: mongoose.Schema.Types.ObjectId, ref: 'activityHistory', default: [] }], // Refência ao documento da atividade na colecao de ativityHistory
+  activityGoals: [{ type: mongoose.Schema.Types.ObjectId, ref: 'activityGoals', default: [] }], // Refência ao documento da atividade na colecao de ativityGoals
   friends: [{ type: mongoose.Schema.Types.ObjectId, ref: 'friendsList' }], // Relacionamento com friendsList
   groups: { type: Array, default: [] },
 });
