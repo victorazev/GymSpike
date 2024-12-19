@@ -1,37 +1,43 @@
+import { ActivityHistoryModel } from '../models/activityHistory.models';
+import { activityGoalsModel } from '../models/activityGoals.models';
 import { UserListModel } from '../models/user.model'; // Ajuste o caminho conforme necessário
 
 // Buscar atividades pelo ID do usuário
 export const getActivityFeedback = async (userId: string) => {
 	// Encontre o usuário pelo ID e retorne apenas o campo `activityGoals`
 	const user = await UserListModel.findById(userId);
+
+	const activityHistory = await ActivityHistoryModel.find({
+		userReference: userId,
+	});
+	const activityGoals = await activityGoalsModel.find({
+		userReference: userId,
+	});
+
 	if (!user) {
 		throw new Error('User not found');
 	}
 
-	if (
-		!user.activityGoals?.length ||
-		!user.activityHistory?.length
-	) {
+	if (!activityGoals?.length || !activityHistory?.length) {
 		// Verifica se há atividades registradas no objeto do usuário
 		throw new Error(
 			'Este usuário não possui atividades registradas',
 		);
 	}
 
-	let atividadesRegistradas = user.activityHistory?.length || 0;
-	atividadesRegistradas += user.activityGoals?.length || 0;
+	let atividadesRegistradas = activityHistory?.length || 0;
+	atividadesRegistradas += activityGoals?.length || 0;
 
-	let score = user.activityGoals?.reduce(
+	let score = activityGoals?.reduce(
 		(acc, cur) => acc + cur.score,
 		0,
 	);
 
-	score += user.activityHistory?.reduce(
+	score += activityHistory?.reduce(
 		(acc, cur) => acc + cur.score,
 		0,
 	);
 
-	console.log(score);
 	let feedback = {
 		'Atividades realizadas:': atividadesRegistradas,
 		'Score total': score,
