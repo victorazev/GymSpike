@@ -1,10 +1,16 @@
 import { Router } from 'express';
-import { getActivities } from '../controllers/feedback.controller';
+import {
+	getActivities,
+	getAnalisys,
+} from '../controllers/feedback.controller';
 import { authenticate } from '../middlewares/auth.middleware';
 
 const router = Router();
 
-// Obter todas as atividades de um usuário
+// Obter feedback de atividade do usuário
 router.get('/:userId/feedback', authenticate, getActivities);
+
+// Obter análise de atividade do usuário
+router.get('/:userId/analysis', authenticate, getAnalisys);
 
 export default router;
