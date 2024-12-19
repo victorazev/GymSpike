@@ -132,6 +132,25 @@ o alcance do aplicativo
 
 ### 2.4 Matriz de Risco
 
+Matriz de Risco
+
+&emsp;&emsp;Uma matriz de risco é uma ferramenta de gestão utilizada para identificar, avaliar e priorizar os riscos associados a um projeto, processo ou atividade. Ela organiza os riscos em uma tabela bidimensional onde:
+
+- Um dos eixos representa a probabilidade (ou frequência) de ocorrência do risco, variando de "muito baixo" a "muito alto".
+- O outro eixo representa o impacto ou a severidade do risco, que pode ir de "mínimo" a "catastrófico".
+
+&emsp;&emsp;Cada risco é colocado na matriz com base na sua probabilidade e impacto, resultando em uma visualização clara que ajuda a:
+
+- Identificar quais riscos são mais críticos e necessitam de atenção imediata.
+- Avaliar a prioridade de cada risco para o gerenciamento, permitindo uma alocação eficiente de recursos.
+- Mitigar ou planejar respostas apropriadas para cada risco, desde a prevenção até a contingência.
+
+&emsp;&emsp;Essa matriz facilita a comunicação sobre riscos entre as partes interessadas e auxilia na tomada de decisões informadas ao longo do ciclo de vida do projeto ou operação.
+
+![image](https://github.com/user-attachments/assets/c39c011f-1890-4e89-93b7-20079e67ec7e)
+
+
+
 ## 3. Análise de experiência do usuário
 
 ### 3.1 Perfis de Usuários
@@ -317,3 +336,82 @@ Feedback e análise de progresso
 3.	RN15: O feedback compartilhado em aplicações externas deve ser padronizado e conter apenas informações permitidas pelo usuário.
 4.	RN16: A análise de progresso do usuário deve incluir indicadores visuais (gráficos ou métricas) baseados no desempenho individual.
 
+## 5. Banco de dados
+
+### 5.1 Tecnologia escolhida
+
+&emsp;&emsp;A tecnologia de banco de dados escolhida para o projeto foi a Não Relacional, devido à sua flexibilidade e escalabilidade que advêm do seu modelo de coleções e documentos no lugar de tabelas. O uso desse modelo coloca o projeto em linha com padrões modernos de desenvolvimento, em que o NoSQL ganha cada vez mais espaço, e seu modelo de armazenamento de dados será capaz de representar bem as informações que alimentarão o aplicativo. Além disso, o uso de plataformas em nuvem como o Mongo Atlas, aliado a uma biblioteca que forneça uma API para manipulação, como o Mongoose, facilitará o desenvolvimento e manutenção do back-end, simplificando a etapa de configuração e modelagem do banco de dados, uma das mais importantes no desenvolvimento de qualquer aplicação.
+
+### 5.2 Modelagem do banco de dados
+
+&emsp;&emsp;Por não se tratar de um uso de tabelas, a modelagem do banco de dados pode ser tratada numa forma de notação o de objeto.
+```
+COLLECTION userList CONTAINS UserListDocument
+
+interface UserListDocument {
+  email: string;
+  username: string;
+  firstName: string;
+  lastName: string;
+  phone: string;
+  gender: 'F' | 'M';
+  passwordHash: string;
+  lastAccess: Date;
+  streak: number;
+  admin: bool;
+  
+  activityHistory: COLLECTION;
+  activityGoals: COLLECTION;
+  friends: COLLECTION;
+  groups: COLLECTION;
+}
+```
+```
+COLLECTION userList/$id/activityHistory CONTAINS UserActivityHistoryDocument
+
+interface UserActivityHistoryDocument {
+  exerciseType: 'RUNNING' | 'WEIGHTLIFTING' | 'TREADMILL' | 'SWIMMING';
+  timestampStart: Date;
+  timestampEnd: Date;
+  score: number;
+  avgHeartbeat: number;
+  estimatedCalories: number;
+}
+```
+```
+COLLECTION userList/$id/activityGoals CONTAINS UserActivityGoalsDocument
+
+interface UserActivityGoalsDocument {
+  timestampStart: Date;
+	timestampEnd: Date;
+	score: number;
+}
+```
+```
+COLLECTION userList/$id/friends CONTAINS UserFriendListDocument
+
+interface UserFriendListDocument {
+  addedAt: Date;
+  userReference: REFERENCES UserListDocument;
+}
+```
+```
+COLLECTION userList/$id/groups CONTAINS UserGroupListDocument
+
+interface UserGroupListDocument {
+  createdAt: Date;
+  createdBy: REFERENCES UserListDocument;
+  
+  members: COLLECTION;
+  // activity: COLLECTION;
+}
+```
+```
+COLLECTION userList/$id/groups/$groupId/members CONTAINS GroupMembersList
+
+interface GroupMembersListDocument {
+  addedAt: Date;
+  addedBy: REFERENCES userListDocument;
+  userReference: REFERENCES userListDocument;
+}
+```
