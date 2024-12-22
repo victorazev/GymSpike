@@ -6,18 +6,19 @@
 
 body {
 	font-family: Arial, sans-serif;
-	background-color: #f4a100;
+	background-color: #dadada; /* Cinza-claro */
 	display: flex;
 	flex-direction: column;
-	color: black;
+	color: #1a1a1a; /* Preto */
+	height: 100%;
 }
 
 .profileinfo {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	background-color: #000;
-	color: #fff;
+	background-color: #2d2d2d; /* Cinza-escuro */
+	color: #ffffff;
 	padding: 0.5rem;
 	border-radius: 0% 0% 1rem 1rem;
 }
@@ -26,6 +27,7 @@ body {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
+	border: 2px solid #F4A100; /* Laranja */
 }
 
 .profileinfo p {
@@ -35,11 +37,11 @@ body {
 
 /* Card */
 .card {
-	background-color: #fff;
+	background-color: #ffffff; /* Branco */
 	margin: 0.7rem;
 	padding: 1rem;
 	border-radius: 0.5rem;
-	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 /* Footer */
@@ -47,13 +49,15 @@ body {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background-color: #cccccc;
-	color: #49454f;
+	background-color: #2d2d2d; /* Cinza-escuro */
+	color: #F4A100; /* Laranja */
 	padding: 1rem 0;
-	position: fixed; /* Fixar o footer */
-	bottom: 0; /* Sempre no final da página */
-	width: 100%; /* Largura completa */
-	box-shadow: 0px -1rem 3rem rgba(0, 0, 0, 0.2);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	box-shadow: 0px -1rem 3rem rgba(0, 0, 0, 0.1);
+	height: 4rem; /* Altura fixa para o footer */
+	box-sizing: border-box; /* Garantir que o padding não afete a altura */
 }
 
 .icon {
@@ -61,6 +65,20 @@ body {
 	flex-direction: row;
 	align-items: center;
 	font-size: 1rem;
+	cursor: pointer;
+	color: #F4A100; /* Laranja */
+	transition: color 0.3s ease;
+}
+
+.icon:hover {
+	color: #f7931e; /* Laranja mais claro no hover */
+}
+
+/* Adicionando a borda laranja quando o ícone está ativo */
+.icon.active {
+	border: 2px solid #F4A100; /* Laranja */
+	padding: 0.5rem; /* Manter padding para dar espaço */
+	box-sizing: border-box; /* Evitar que a borda afete o tamanho do elemento */
 }
 
 li > :first-child {
