@@ -9,7 +9,7 @@ import {
 
 function appLayout() {
 	return (
-		<body>
+		<div>
 			<div className={styles.profileinfo}>
 				<img
 					className={styles.profileimage}
@@ -41,7 +41,7 @@ function appLayout() {
 					Atividades
 				</li>
 			</div>
-		</body>
+		</div>
 	);
 }
 
