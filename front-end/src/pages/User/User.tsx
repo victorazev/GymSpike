@@ -2,7 +2,7 @@ import styles from './User.module.css';
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button/Button";
 
-function User() {
+export function User() {
     const navigate = useNavigate();
 	return (
 		<div className={styles.user}>
@@ -24,19 +24,47 @@ function User() {
 					<h2>Ranking</h2>
 					<p>Aqui falamos seu ranking.</p>
 				</div>
-                <div className={styles.card}>
+        <div className={styles.card}>
 					<h2>Ranking</h2>
 					<p>Aqui falamos seu ranking.</p>
 				</div>
-                <div className={styles.card}>
+        <div className={styles.card}>
 					<h2>Ranking</h2>
 					<p>Aqui falamos seu ranking.</p>
 				</div>
+				<div className={styles.card}>
+					<h2>Ranking</h2>
+					<p>Aqui falamos seu ranking.</p>
+				</div>
+				<div className={styles.card}>
+					<h2>Ranking</h2>
+					<p>Aqui falamos seu ranking.</p>
+				</div>
+				<div className={styles.card}>
+					<h2>Ranking</h2>
+					<p>Aqui falamos seu ranking.</p>
+				</div>
+				<Button onClick={() => navigate("/userconfig")}>Configurações</Button>
 			</div>
-
-            <Button onClick={() => navigate("/userconfig")}>Configurações</Button>
 		</div>
 	);
 }
 
-export default User;
+export function Userconfig(){
+	const navigate = useNavigate();
+	return(
+		<div className={styles.user}>
+			<div className={styles.cards}>
+				<h2 className={styles.title}>Configurações</h2>
+				<form className={styles.form}>
+					<input type="text" placeholder="Alterar Apelido" />
+					<input type="text" placeholder="Alterar Nome" />
+					<input type="text" placeholder="Alterar Sobrenome" />
+					<input type="text" placeholder="Alterar Telefone" />
+					<Button onClick={() => navigate("/user")}>Salvar</Button>
+					<Button onClick={() => navigate("/user")}>Voltar</Button>
+				</form>
+			</div>
+		</div>
+	);
+}
