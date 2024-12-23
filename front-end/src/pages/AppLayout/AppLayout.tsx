@@ -11,25 +11,24 @@ function AppLayout() {
 	const navigate = useNavigate();
 	const location = useLocation();
 
-	// Função para verificar se a rota corresponde à rota atual
 	const isActive = (route: string) => location.pathname === route;
 
 	return (
-		<body>
-			<div className={styles.profileinfo}>
+		<div>
+			<header className={styles.profileinfo}>
 				<img
 					className={styles.profileimage}
 					src="https://via.placeholder.com/50"
 					alt="Profile"
 				/>
 				<p>Nome ou username</p>
-			</div>
+			</header>
 
 			<main className={styles.card}>
 				<Outlet />
 			</main>
 
-			<div className={styles.footer}>
+			<ul className={styles.footer}>
 				<li
 					className={`${styles.icon} ${isActive('/dashboard') ? styles.active : ''}`}
 					onClick={() => navigate('/')}
@@ -58,9 +57,10 @@ function AppLayout() {
 					<HiDocumentCheck />
 					Atividades
 				</li>
-			</div>
-		</body>
+			</ul>
+		</div>
 	);
 }
+
 
 export default AppLayout;
