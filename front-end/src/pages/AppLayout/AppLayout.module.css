@@ -1,0 +1,69 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4a100;
+	display: flex;
+	flex-direction: column;
+	color: black;
+}
+
+.profileinfo {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+	padding: 0.5rem;
+	border-radius: 0% 0% 1rem 1rem;
+}
+
+.profileimage {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.profileinfo p {
+	font-size: 1.5rem;
+	margin-left: 1rem;
+}
+
+/* Card */
+.card {
+	background-color: #fff;
+	margin: 0.7rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #cccccc;
+	color: #49454f;
+	padding: 1rem 0;
+	position: fixed; /* Fixar o footer */
+	bottom: 0; /* Sempre no final da página */
+	width: 100%; /* Largura completa */
+	box-shadow: 0px -1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 1rem;
+}
+
+li > :first-child {
+	font-size: 1.5rem;
+	margin-right: 0.3rem;
+}
