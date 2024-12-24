@@ -3,18 +3,27 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button/Button";
 
 export function Social() {
+	const mockFriends = [
+		{ id: "afonso", name: "Afonso" },
+		{ id: "rica", name: "Rica" },
+		{ id: "leo", name: "Leo" },
+		{ id: "seu jorge", name: "Jorge"},
+	  ];
   const navigate = useNavigate();
 	return (
 		<div className={styles.social}>
 			<h1 className={styles.title}>Social</h1>
 			<div className={styles.cards}>
 				<Button >Ativar perfil</Button>
-        <Button >Adicionar amigos</Button>
-        <Button >Excluir amigos</Button>
+        		<Button >Adicionar amigos</Button>
+        		<Button >Excluir amigos</Button>
 				<ul className={styles.friendList}>
-					<li><input type="checkbox" id="afonso" /> <label htmlFor="afonso">Afonso</label></li>
-					<li><input type="checkbox" id="rica" /> <label htmlFor="rica">Rica</label></li>
-					<li><input type="checkbox" id="leo" /> <label htmlFor="leo">Leo</label></li>
+				{mockFriends.map((friend) => (
+					<li key={friend.id}>
+					<input type="checkbox" id={friend.id} /> 
+					<label htmlFor={friend.id}>{friend.name}</label>
+					</li>
+				))}
 				</ul>
 			</div>
       <Button onClick={() => navigate("/groups")}>Ver grupos</Button>
@@ -23,6 +32,10 @@ export function Social() {
 }
 
 export function Groups(){
+	const mockGroups = [
+		{ id: "steves-marombas", name: "Steves Marombas" },
+		{ id: "pokemarombas", name: "Pokemarombas" },
+	  ];
 	const navigate = useNavigate();
 	return (
 		<div className={styles.social}>
@@ -31,8 +44,12 @@ export function Groups(){
 					<Button>+ Entrar em um grupo</Button>
 					<Button >Criar grupo</Button>
 					<ul className={styles.friendList}>
-						<li><input type="checkbox" id="afonso" /> <label htmlFor="afonso">Steves Marombas</label></li>
-						<li><input type="checkbox" id="rica" /> <label htmlFor="rica">Pokemarombas</label></li>
+					{mockGroups.map((group) => (
+						<li key={group.id}>
+						<input type="checkbox" id={group.id} /> 
+						<label htmlFor={group.id}>{group.name}</label>
+						</li>
+					))}
 					</ul>
 			</div>
 			<Button onClick={() => navigate("/social")}>Voltar</Button>

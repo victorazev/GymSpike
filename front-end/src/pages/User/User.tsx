@@ -4,6 +4,32 @@ import Button from "../../components/Button/Button";
 
 export function User() {
     const navigate = useNavigate();
+	const mockData = {
+		user: {
+		  username: "johndoe",
+		  streak: 5, // Dias consecutivos
+		  activityHistory: [
+			{ score: 100, timestamp: "2024-12-20" },
+			{ score: 150, timestamp: "2024-12-21" },
+			{ score: 200, timestamp: "2024-12-22" },
+		  ],
+		  groups: [
+			{
+			  name: "Grupo 1",
+			  members: [
+				{ username: "johndoe", totalScore: 450 },
+				{ username: "janedoe", totalScore: 400 },
+				{ username: "mike", totalScore: 500 },
+			  ],
+			},
+		  ],
+		},
+	  };
+	  const totalScore = mockData.user.activityHistory.reduce((acc, activity) => acc + activity.score, 0);
+	  const group = mockData.user.groups[0];
+	  const ranking = group.members
+        .sort((a, b) => b.totalScore - a.totalScore)
+        .findIndex(member => member.username === mockData.user.username) + 1;
 	return (
 		<div className={styles.user}>
 			<h1 className={styles.title}>Perfil</h1>
@@ -11,38 +37,18 @@ export function User() {
 				Uma frase motivacional foda!
 			</p>
 			
-			<div className={styles.cards}>
+				<div className={styles.cards}>
 				<div className={styles.card}>
 					<h2>Pontuação</h2>
-					<p>Aqui falamos sua pontuação.</p>
+					<p>Sua pontuação é {totalScore}!</p>
 				</div>
 				<div className={styles.card}>
 					<h2>Streak</h2>
-					<p>Aqui falamos seu streak.</p>
+					<p>Sua streak é de {mockData.user.streak} dias! .</p>
 				</div>
-				<div className={styles.card}>
+        		<div className={styles.card}>
 					<h2>Ranking</h2>
-					<p>Aqui falamos seu ranking.</p>
-				</div>
-        <div className={styles.card}>
-					<h2>Ranking</h2>
-					<p>Aqui falamos seu ranking.</p>
-				</div>
-        <div className={styles.card}>
-					<h2>Ranking</h2>
-					<p>Aqui falamos seu ranking.</p>
-				</div>
-				<div className={styles.card}>
-					<h2>Ranking</h2>
-					<p>Aqui falamos seu ranking.</p>
-				</div>
-				<div className={styles.card}>
-					<h2>Ranking</h2>
-					<p>Aqui falamos seu ranking.</p>
-				</div>
-				<div className={styles.card}>
-					<h2>Ranking</h2>
-					<p>Aqui falamos seu ranking.</p>
+					<p>{ranking}º lugar</p>
 				</div>
 				<Button onClick={() => navigate("/userconfig")}>Configurações</Button>
 			</div>
