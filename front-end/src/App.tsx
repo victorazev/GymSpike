@@ -12,7 +12,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import {User, Userconfig} from './pages/User/User';
 import {Social, Groups} from './pages/Social/Social';
 import Activities from './pages/Activities/Activities';
-
+import UserActivity from './pages/UserActivity/UserActivity';
 
 function App() {
 	return (
@@ -27,7 +27,7 @@ function App() {
 					<Route path="social" element={<Social />} />
 					<Route path="groups" element={<Groups />} />
 					<Route path="activities" element={<Activities />} />
-				</Route>
+					<Route path="userActivity" element={<UserActivity />}/>
 				
 				{/* Rotas sem layout */}
 				<Route path="login" element={<Login />} />

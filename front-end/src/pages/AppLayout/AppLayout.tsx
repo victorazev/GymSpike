@@ -15,14 +15,14 @@ function AppLayout() {
 
 	return (
 		<div>
-			<header className={styles.profileinfo}>
+			<div className={styles.profileinfo}>
 				<img
 					className={styles.profileimage}
 					src="https://via.placeholder.com/50"
 					alt="Profile"
 				/>
 				<p>Nome ou username</p>
-			</header>
+			</div>
 
 			<main className={styles.card}>
 				<Outlet />
