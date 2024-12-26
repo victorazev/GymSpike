@@ -28,6 +28,7 @@ function App() {
 					<Route path="groups" element={<Groups />} />
 					<Route path="activities" element={<Activities />} />
 					<Route path="userActivity" element={<UserActivity />}/>
+				</Route>
 				
 				{/* Rotas sem layout */}
 				<Route path="login" element={<Login />} />
