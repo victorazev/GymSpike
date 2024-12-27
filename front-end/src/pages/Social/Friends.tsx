@@ -1,8 +1,8 @@
-import styles from './Social.module.css';
+import styles from './Friends.module.css';
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button/Button";
 
-export function Social() {
+export function Friends() {
 	const mockFriends = [
 		{ id: "afonso", name: "Afonso" },
 		{ id: "rica", name: "Rica" },
@@ -12,7 +12,7 @@ export function Social() {
   const navigate = useNavigate();
 	return (
 		<div className={styles.social}>
-			<h1 className={styles.title}>Social</h1>
+			<h1 className={styles.title}>Amigos</h1>
 			<div className={styles.cards}>
 				<Button >Ativar perfil</Button>
         		<Button >Adicionar amigos</Button>
