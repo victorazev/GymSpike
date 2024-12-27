@@ -9,8 +9,13 @@
   background-color: #F4A100;
   color: #000;
   transition: background-color 0.3s;
+  margin: 0.5rem;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3); /* Sombra leve */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .button:hover {
   background-color: #f7931e;
+	transform: translateY(-5px); /* Elevação ao hover */
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sombra mais forte */
 }
