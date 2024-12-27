@@ -31,6 +31,7 @@ function App() {
 						element={<GroupActivity />}
 					/>
 				</Route>
+        
 				<Route path="login" element={<Login />} />
 				<Route path="cadastro" element={<Cadastro />} />
 				<Route path="cadastro2" element={<Cadastro2 />} />
