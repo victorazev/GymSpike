@@ -44,11 +44,11 @@ function AppLayout() {
 					Perfil
 				</li>
 				<li
-					className={`${styles.icon} ${isActive('/social') ? styles.active : ''}`}
-					onClick={() => navigate('/social')}
+					className={`${styles.icon} ${isActive('/friends') ? styles.active : ''}`}
+					onClick={() => navigate('/friends')}
 				>
 					<HiOutlineUserGroup />
-					Social
+					Amigos
 				</li>
 				<li
 					className={`${styles.icon} ${isActive('/activities') ? styles.active : ''}`}
