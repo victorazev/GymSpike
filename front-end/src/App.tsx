@@ -13,6 +13,7 @@ import {User, Userconfig} from './pages/User/User';
 import {Social, Groups} from './pages/Social/Social';
 import Activities from './pages/Activities/Activities';
 import UserActivity from './pages/UserActivity/UserActivity';
+import GroupActivity from './pages/GroupActivity/GroupActivity';
 
 function App() {
 	return (
@@ -22,12 +23,13 @@ function App() {
 				<Route element={<AppLayout />}>
 					<Route index element={<Navigate replace to="dashboard" />} />
 					<Route path="dashboard" element={<Dashboard />} />
+					<Route path="userActivity" element={<UserActivity />}/>
+					<Route path="groupActivity" element={<GroupActivity />}/>
 					<Route path="user" element={<User />} />
 					<Route path="userconfig" element={<Userconfig />} />
 					<Route path="social" element={<Social />} />
 					<Route path="groups" element={<Groups />} />
 					<Route path="activities" element={<Activities />} />
-					<Route path="userActivity" element={<UserActivity />}/>
 				</Route>
 				
 				{/* Rotas sem layout */}
