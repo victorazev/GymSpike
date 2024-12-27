@@ -4,51 +4,53 @@ import styles from './GroupActivity.module.css';
 
 const data = [
 	{
-		id: 0,
 		text: 'Academia',
 		image: 'https://via.placeholder.com/50',
 		completed: true,
 	},
 	{
-		id: 1,
 		text: 'Academia',
 		image: 'https://via.placeholder.com/50',
 		completed: false,
 	},
 	{
-		id: 2,
 		text: 'Correr na esteira',
 		image: 'https://via.placeholder.com/50',
 		completed: false,
 	},
 	{
-		id: 3,
 		text: 'Beber 3 litros de água',
 		image: 'https://via.placeholder.com/50',
 		completed: true,
 	},
 	{
-		id: 4,
 		text: 'Andar de bicicleta',
 		image: 'https://via.placeholder.com/50',
 		completed: true,
 	},
 	{
-		id: 5,
 		text: 'Tocar na grama',
 		image: 'https://via.placeholder.com/50',
 		completed: false,
 	},
 ];
 
+// Gera id para cada objeto e matém os atributos originais do objeto
+const indexedData = data.map((item, index) => ({
+	id: index,
+	...item,
+}));
+
 function GroupActivity() {
+	// Gerencia o state gerando um objeto com base apenas no ID e completed
 	const [checkedItems, setCheckedItems] = useState(
-		data.reduce(
+		indexedData.reduce(
 			(acc, item) => ({ ...acc, [item.id]: item.completed }),
 			{},
 		),
 	);
 
+	// Altera o state do objeto com base no ID obtido
 	const handleCheckboxChange = (e: number) => {
 		setCheckedItems((prev) => ({
 			...prev,
@@ -59,8 +61,8 @@ function GroupActivity() {
 	return (
 		<>
 			<div className={styles.container}>
-				{data.map((task, i) => (
-					<div key={i} className={styles.task}>
+				{indexedData.map((task) => (
+					<div key={task.id} className={styles.task}>
 						<img
 							src={task.image}
 							alt="Task"
@@ -70,9 +72,9 @@ function GroupActivity() {
 						<div className={styles.actions}>
 							<input
 								type="checkbox"
-								checked={checkedItems[i]}
+								checked={checkedItems[task.id]}
 								className={styles.checkbox}
-								onChange={() => handleCheckboxChange(i)}
+								onChange={() => handleCheckboxChange(task.id)}
 							/>
 						</div>
 					</div>
