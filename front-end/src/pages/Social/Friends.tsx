@@ -52,7 +52,7 @@ export function Groups(){
 					))}
 					</ul>
 			</div>
-			<Button onClick={() => navigate("/social")}>Voltar</Button>
+			<Button onClick={() => navigate("/friends")}>Voltar</Button>
 		</div>
 	);
 }

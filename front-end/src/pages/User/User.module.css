@@ -108,7 +108,7 @@ input::placeholder {
 .title {
   font-size: 2rem;
   color: #2d2d2d;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .form {
