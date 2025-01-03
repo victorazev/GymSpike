@@ -23,7 +23,7 @@ export function User() {
 									],
 							},
 							{
-									name: "Grupo Pokemarombas",
+									name: "Grupo Poke Marombas",
 									members: [
 											{ username: "johndoe", totalScore: 450 },
 											{ username: "maria", totalScore: 200 },

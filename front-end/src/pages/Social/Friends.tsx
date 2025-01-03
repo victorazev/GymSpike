@@ -34,7 +34,7 @@ export function Friends() {
 export function Groups(){
 	const mockGroups = [
 		{ id: "steves-marombas", name: "Steves Marombas" },
-		{ id: "pokemarombas", name: "Pokemarombas" },
+		{ id: "pokemarombas", name: "Poke Marombas" },
 	  ];
 	const navigate = useNavigate();
 	return (
