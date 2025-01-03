@@ -10,7 +10,7 @@ import { Cadastro, Cadastro2 } from './pages/Cadastro/Cadastro';
 import AppLayout from './pages/AppLayout/AppLayout';
 import Dashboard from './pages/Dashboard/Dashboard';
 import {User, Userconfig} from './pages/User/User';
-import {Social, Groups} from './pages/Social/Social';
+import {Friends, Groups} from './pages/Social/Friends';
 import Activities from './pages/Activities/Activities';
 import UserActivity from './pages/UserActivity/UserActivity';
 import GroupActivity from './pages/GroupActivity/GroupActivity';
@@ -27,7 +27,7 @@ function App() {
 					<Route path="groupActivity" element={<GroupActivity />}/>
 					<Route path="user" element={<User />} />
 					<Route path="userconfig" element={<Userconfig />} />
-					<Route path="social" element={<Social />} />
+					<Route path="friends" element={<Friends />} />
 					<Route path="groups" element={<Groups />} />
 					<Route path="activities" element={<Activities />} />
 				</Route>
