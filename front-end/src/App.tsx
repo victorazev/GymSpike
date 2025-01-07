@@ -11,7 +11,6 @@ import AppLayout from './pages/AppLayout/AppLayout';
 import Dashboard from './pages/Dashboard/Dashboard';
 import {User, Userconfig} from './pages/User/User';
 import {Friends, Groups} from './pages/Social/Friends';
-import Activities from './pages/Activities/Activities';
 import UserActivity from './pages/UserActivity/UserActivity';
 import GroupActivity from './pages/GroupActivity/GroupActivity';
 
@@ -29,7 +28,6 @@ function App() {
 					<Route path="userconfig" element={<Userconfig />} />
 					<Route path="friends" element={<Friends />} />
 					<Route path="groups" element={<Groups />} />
-					<Route path="activities" element={<Activities />} />
 				</Route>
 				
 				{/* Rotas sem layout */}

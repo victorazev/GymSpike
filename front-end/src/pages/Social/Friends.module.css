@@ -52,36 +52,210 @@
 }
 
 /* Estilização da lista de amigos */
+/* Lista de amigos */
 .friendList {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   margin: 0;
+  width: 100%;
+}
+
+.friendItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 0.8rem;
+  border-radius: 12px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;  
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.friendItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.friendImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.friendLabel {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.friendLabel:hover {
+  color: #ffa500;
 }
 
 .friendList li {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 0.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.friendList li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .friendList input[type="checkbox"] {
   width: 20px;
   height: 20px;
+  accent-color: #ffa500;
+  cursor: pointer;
+}
+
+.friendItem input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #ffa500;
+  cursor: pointer;
 }
 
 .friendList label {
   font-size: 1rem;
-  color: #555555;
+  color: #333;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .friendList label:hover {
-  color: #2d2d2d; /* Alteração de cor no hover */
+  color: #ffa500; /* Destaca o texto ao passar o mouse */
 }
 
 /* Botões */
 button {
   margin-bottom: 0.5rem;
+}
+
+/* Container do switch */
+.switchContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #ffa500;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Lista de grupos */
+.groupList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.groupItem {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.groupItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagem do grupo */
+.groupImage {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+}
+
+/* Detalhes do grupo */
+.groupDetails {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.groupName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.groupDetails input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  accent-color: #ffa500;
+}
+
+.groupDetails label {
+  font-size: 0.9rem;
+  color: #333;
 }
