@@ -6,6 +6,7 @@ import {
 	HiOutlineUserGroup,
 	HiDocumentCheck,
 } from 'react-icons/hi2';
+import avatar1 from '../../assets/avatar4.png';
 
 function AppLayout() {
 	const navigate = useNavigate();
@@ -18,7 +19,7 @@ function AppLayout() {
 			<div className={styles.profileinfo}>
 				<img
 					className={styles.profileimage}
-					src="https://via.placeholder.com/50"
+					src={avatar1}
 					alt="Profile"
 				/>
 				<p>Nome ou username</p>
@@ -52,7 +53,7 @@ function AppLayout() {
 				</li>
 				<li
 					className={`${styles.icon} ${isActive('/activities') ? styles.active : ''}`}
-					onClick={() => navigate('/activities')}
+					onClick={() => navigate('/userActivity')}
 				>
 					<HiDocumentCheck />
 					Atividades
