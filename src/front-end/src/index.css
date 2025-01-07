@@ -1,0 +1,58 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	background-color: #f5f5f5; /* Fundo principal cinza-claro */
+	color: #1a1a1a; /* Preto */
+	color-scheme: light dark;
+}
+
+body {
+	background-color: #f5f5f5; /* Fundo principal */
+	color: #1a1a1a; /* Texto principal */
+	height: 100vh;
+}
+
+input {
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 16px;
+	font-size: 1rem;
+	border: 1px solid #2d2d2d; /* Borda cinza-escuro */
+	border-radius: 8px;
+	background-color: #e8e8e8; /* Cinza-claro */
+	color: #1a1a1a;
+}
+
+input:focus {
+	outline: 2px solid #ff6b35; /* Foco em laranja */
+}
+
+button {
+	width: 100%;
+	padding: 12px;
+	font-size: 1rem;
+	font-weight: bold;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	background-color: #ff6b35; /* Laranja */
+	color: #ffffff;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #ffa069; /* Laranja mais claro */
+}
+
+@media (min-width: 768px) {
+	h2 {
+		font-size: 2rem;
+	}
+
+	input {
+		font-size: 1.2rem;
+	}
+
+	button {
+		font-size: 1.2rem;
+	}
+}
