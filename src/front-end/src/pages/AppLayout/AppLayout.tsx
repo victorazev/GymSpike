@@ -32,7 +32,7 @@ function AppLayout() {
 			<ul className={styles.footer}>
 				<li
 					className={`${styles.icon} ${isActive('/dashboard') ? styles.active : ''}`}
-					onClick={() => navigate('/')}
+					onClick={() => navigate('/dashboard')}
 				>
 					<HiBars4 />
 					Menu
@@ -52,7 +52,7 @@ function AppLayout() {
 					Amigos
 				</li>
 				<li
-					className={`${styles.icon} ${isActive('/activities') ? styles.active : ''}`}
+					className={`${styles.icon} ${isActive('/userActivity') ? styles.active : ''}`}
 					onClick={() => navigate('/userActivity')}
 				>
 					<HiDocumentCheck />
