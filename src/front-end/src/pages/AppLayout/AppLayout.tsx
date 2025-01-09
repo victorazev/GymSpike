@@ -7,10 +7,12 @@ import {
 	HiDocumentCheck,
 } from 'react-icons/hi2';
 import avatar1 from '../../assets/avatar4.png';
+import { useAuth } from '../../contexts/auth';
 
 function AppLayout() {
 	const navigate = useNavigate();
 	const location = useLocation();
+	const {user} = useAuth();
 
 	const isActive = (route: string) => location.pathname === route;
 
@@ -22,7 +24,7 @@ function AppLayout() {
 					src={avatar1}
 					alt="Profile"
 				/>
-				<p>Nome ou username</p>
+				<p>{user?.username}</p>
 			</div>
 
 			<main className={styles.card}>
