@@ -1,9 +1,11 @@
 import styles from './User.module.css';
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button/Button";
+import { useAuth } from '../../contexts/auth';
 
 export function User() {
 	const navigate = useNavigate();
+	const {user, signOut} = useAuth();
 	const mockData = {
 			user: {
 					username: "johndoe",
@@ -63,7 +65,7 @@ export function User() {
 
 	return (
 			<div className={styles.user}>
-					<h1 className={styles.title}>Perfil</h1>
+					<h1 className={styles.title}>Perfil do {user?.firstName} </h1>
 					<p className={styles.description}>{randomPhrase}</p>
 
 					<div className={styles.cards}>
@@ -88,6 +90,7 @@ export function User() {
 					</div>
 
 					<Button onClick={() => navigate("/userconfig")}>Configurações</Button>
+					<Button onClick={() => signOut()}>Logout</Button>
 			</div>
 	);
 }
