@@ -7,7 +7,6 @@ import { Cadastro } from "../pages/Cadastro/Cadastro";
 
 const MainRoutes: React.FC = () => {
   const { isAuthenticated } = useAuth();
-  console.log("isAuthenticated2:", isAuthenticated);
 
   return (
     <Router>

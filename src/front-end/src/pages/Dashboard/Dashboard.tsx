@@ -29,7 +29,6 @@ function Dashboard() {
 			setIsLoading(true);
 			const aux = await dashData();
 			setData(aux);
-			console.log(aux);
 			setIsLoading(false);
 		}
 		fetchData();
@@ -38,7 +37,6 @@ function Dashboard() {
 	if (isLoading) {
 		return <Loader />;
 	}
-	console.log(data?.length);
 
 	if (!data?.length) {
 		return (
