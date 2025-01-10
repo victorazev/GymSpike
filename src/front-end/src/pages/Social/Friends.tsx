@@ -5,15 +5,15 @@ import { useState } from 'react';
 import avatar1 from '../../assets/avatar1.png';
 import avatar2 from '../../assets/avatar2.png';
 import avatar3 from '../../assets/avatar3.jpg';
-import avatar4 from '../../assets/avatar5.jpg';
-import avatar6 from '../../assets/avatar6.jpeg';
+import avatar4 from '../../assets/avatar4.jpeg';
+
 
 export function Friends() {
 	const [isProfileActive, setIsProfileActive] = useState(false);
 	const navigate = useNavigate();
 	const mockFriends = [
 		{ id: "afonso", name: "Afonso", image: avatar1 },
-		{ id: "rica", name: "Rica", image: avatar6 },
+		{ id: "rica", name: "Rica", image: avatar2 },
 		{ id: "leo", name: "Leo", image: avatar3 },
 		{ id: "seu jorge", name: "Jorge", image: avatar4 },
 	  ];

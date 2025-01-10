@@ -6,7 +6,7 @@ import {
 	HiOutlineUserGroup,
 	HiDocumentCheck,
 } from 'react-icons/hi2';
-import avatar1 from '../../assets/avatar4.png';
+import avatar1 from '../../assets/avatar1.png';
 import { useAuth } from '../../contexts/auth';
 
 function AppLayout() {
