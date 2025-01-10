@@ -17,6 +17,7 @@ const Login = () => {
     try {
       await signIn(email, password);
       navigate("/dashboard");
+      navigate(0);
     } catch (error) {
       alert("Falha no login. Verifique suas credenciais.");
     }
