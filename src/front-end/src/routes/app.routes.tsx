@@ -17,6 +17,7 @@ const AppRoutes: React.FC = () => {
         <Route path="userconfig" element={<Userconfig />} />
         <Route path="friends" element={<Friends />} />
         <Route path="groups" element={<Groups />} />
+        <Route path="login" element={<User />}/>
       </Route>
     </Routes>
   );

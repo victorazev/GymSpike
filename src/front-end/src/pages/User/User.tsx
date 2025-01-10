@@ -5,7 +5,7 @@ import { useAuth } from '../../contexts/auth';
 
 export function User() {
 	const navigate = useNavigate();
-	const {user} = useAuth();
+	const {user, signOut} = useAuth();
 	const mockData = {
 			user: {
 					username: "johndoe",
@@ -90,6 +90,7 @@ export function User() {
 					</div>
 
 					<Button onClick={() => navigate("/userconfig")}>Configurações</Button>
+					<Button onClick={() => signOut()}>Logout</Button>
 			</div>
 	);
 }

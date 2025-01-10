@@ -1,9 +1,10 @@
 import React from "react";
 import { useAuth } from "../contexts/auth";
 import AppRoutes from "./app.routes";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Login from "../pages/Login/Login";
 import { Cadastro } from "../pages/Cadastro/Cadastro";
+import { User, Userconfig } from "../pages/User/User";
 
 const MainRoutes: React.FC = () => {
   const { isAuthenticated } = useAuth();
@@ -19,7 +20,7 @@ const MainRoutes: React.FC = () => {
             {/* Redirecionando para a página de login */}
             <Route path="/login" element={<Login />} />
             <Route path="/cadastro" element={<Cadastro />} />
-            <Route path="/*" element={<Navigate to="/login" />} />
+            <Route path="/*" element={<Login />}/>
           </>
         )}
       </Routes>
