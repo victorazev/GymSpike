@@ -1,14 +1,29 @@
-import { SetStateAction, useState } from 'react';
+import { SetStateAction, useEffect, useState } from 'react';
 import {
 	HiOutlineArrowUpCircle,
 	HiOutlineArrowDownCircle,
 } from 'react-icons/hi2';
+import { format, formatDistanceStrict } from 'date-fns';
 
-import { adicionarAtividade } from '../../services/apiActivity';
+import {
+	adicionarAtividade,
+	receberAtividades,
+} from '../../services/apiActivity';
 import scoreCalculator from './scoreCalculator';
 
 import styles from './UserActivity.module.css';
 import Button from '../../components/Button/Button';
+import Loader from '../../components/LoadSpinner/Loader';
+
+interface Data {
+	score: number;
+	exerciseType: string;
+	timestampStart: Date;
+	timestampEnd: Date;
+	avgHeartbeat: number;
+	estimatedCalories: number;
+	_id: string;
+}
 
 function UserActivity() {
 	const [formData, setFormData] = useState({
@@ -19,68 +34,26 @@ function UserActivity() {
 		estimatedCalories: null,
 	});
 
-	const data = [
-		{
-			name: 'Dia 1',
-			tipo: 'Corrida',
-			score: 300,
-			averageHeartHate: 140,
-			horaInicio: '10:00',
-			horaFim: '11:30',
-		},
-		{
-			name: 'Dia 2',
-			tipo: 'Natação',
-			score: 200,
-			averageHeartHate: 110,
-			horaInicio: '12:00',
-			horaFim: '13:00',
-		},
-		{
-			name: 'Dia 3',
-			tipo: 'Esteira',
-			score: 230,
-			averageHeartHate: 112,
-			horaInicio: '11:07',
-			horaFim: '12:07',
-		},
-		{
-			name: 'Dia 4',
-			tipo: 'Corrida',
-			score: 278,
-			averageHeartHate: 120,
-			horaInicio: '10:20',
-			horaFim: '11:40',
-		},
-		{
-			name: 'Dia 5',
-			tipo: 'Esteira',
-			score: 189,
-			averageHeartHate: 99,
-			horaInicio: '15:00',
-			horaFim: '16:00',
-		},
-		{
-			name: 'Dia 6',
-			tipo: 'Natação',
-			score: 239,
-			averageHeartHate: 110,
-			horaInicio: '18:10',
-			horaFim: '19:20',
-		},
-		{
-			name: 'Dia 7',
-			tipo: 'Corrida',
-			score: 349,
-			averageHeartHate: 150,
-			horaInicio: '10:00',
-			horaFim: '12:45',
-		},
-	];
+	const [data, setData] = useState<Data[] | null>(null);
+	const [isLoading, setIsLoading] = useState(false);
 
 	const [expandedIndex, setExpandedIndex] = useState<
 		string | null
 	>(null);
+
+	useEffect(() => {
+		async function fetchData() {
+			setIsLoading(true);
+			const atividades = await receberAtividades();
+			setData(atividades);
+			setIsLoading(false);
+		}
+		fetchData();
+	}, []);
+
+	if (isLoading) {
+		return <Loader />;
+	}
 
 	const toggleExpand = (
 		index: SetStateAction<string | null>,
@@ -125,6 +98,9 @@ function UserActivity() {
 			estimatedCalories: Number(formData.estimatedCalories),
 			avgHeartbeat: Number(formData.avgHeartbeat),
 		});
+
+		const atividades = await receberAtividades();
+		setData(atividades);
 	};
 
 	return (
@@ -203,35 +179,54 @@ function UserActivity() {
 				</form>
 			</div>
 
-			{data.map((data) => (
+			{data?.map((data) => (
 				<div
-					key={data.name}
+					key={data._id}
 					className={`${styles.activityCard} ${
-						expandedIndex === data.name ? styles.expanded : ''
+						expandedIndex === data._id ? styles.expanded : ''
 					}`}
-					onClick={() => toggleExpand(data.name)}
+					onClick={() => toggleExpand(data._id)}
 				>
 					<div className={styles.activityHeader}>
 						<span>
-							{data.tipo} - {data.name}{' '}
+							{data.exerciseType == 'TREADMILL'
+								? 'Esteira'
+								: data.exerciseType == 'WEIGHTLIFTING'
+								? 'Musculação'
+								: data.exerciseType == 'RUNNING'
+								? 'Corrida'
+								: data.exerciseType == 'SWIMMING'
+								? 'Natação'
+								: data.exerciseType}{' '}
+							- {format(data.timestampStart, 'dd/MM/yy H:mm')}{' '}
 						</span>
 
-						{expandedIndex === data.name ? (
+						{expandedIndex === data._id ? (
 							<HiOutlineArrowUpCircle />
 						) : (
 							<HiOutlineArrowDownCircle />
 						)}
 					</div>
-					{expandedIndex === data.name && (
+					{expandedIndex === data._id && (
 						<div className={styles.activityDetails}>
-							<h3>Início do exercício</h3>
-							<p>{data.horaInicio}</p>
-							<h3>Fim do exercício</h3>
-							<p>{data.horaFim}</p>
+							<h3>Duração do exercício</h3>
+							<p>
+								{format(data.timestampStart, 'H:mm')} -{' '}
+								{format(data.timestampEnd, 'H:mm')}
+								{' | '}
+								{formatDistanceStrict(
+									data.timestampStart,
+									data.timestampEnd,
+									{ unit: 'minute' },
+								).split(' ', 1)}{' '}
+								minutos
+							</p>
 							<h3>Média de batimentos</h3>
-							<p>{data.averageHeartHate}</p>
+							<p>{data.avgHeartbeat} bpm</p>
+							<h3>Calorias estimadas</h3>
+							<p>{data.estimatedCalories} calorias</p>
 							<h3>Score obtido</h3>
-							<p>{data.score}</p>
+							<p>{data.score} pontos</p>
 						</div>
 					)}
 				</div>
