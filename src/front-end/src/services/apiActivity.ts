@@ -2,26 +2,28 @@ const token = localStorage.getItem('authToken');
 const userObj = JSON.parse(localStorage.getItem('user'));
 
 export async function adicionarAtividade(atividade: any) {
-	const bodyReq = JSON.stringify({
-		...atividade,
-		userId: userObj.id,
-	});
-	console.log(bodyReq);
-	return atividade;
-
 	try {
-		const data = await fetch(
+		const response = await fetch(
 			`http://localhost:5000/api/users/${userObj.id}/activities`,
 			{
 				method: 'POST',
+				headers: {
+					Authorization: `Bearer ${token}`,
+					'Content-Type': 'application/json',
+				},
 				body: JSON.stringify({
 					...atividade,
 					userId: userObj.id,
 				}),
-				headers: { Authorization: `Bearer ${token}` },
 			},
-		).then((rsp) => rsp.json());
-		console.log(data);
+		);
+
+		if (!response.ok) {
+			throw new Error(`HTTP error! status: ${response.status}`);
+		}
+
+		const data = await response.json();
+
 		return data;
 	} catch (error) {
 		console.error('Erro adicionar atividade:', error);
