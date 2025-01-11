@@ -4,32 +4,11 @@ import {
 	HiOutlineArrowDownCircle,
 } from 'react-icons/hi2';
 
+import { adicionarAtividade } from '../../services/apiActivity';
+import scoreCalculator from './scoreCalculator';
+
 import styles from './UserActivity.module.css';
 import Button from '../../components/Button/Button';
-import { adicionarAtividade } from '../../services/apiActivity';
-
-const calculateScore = (
-	horaInicio: string,
-	horaFim: string,
-): number => {
-	const [inicioHora, inicioMin] = horaInicio
-		.split(':')
-		.map(Number);
-	const [fimHora, fimMin] = horaFim.split(':').map(Number);
-
-	const totalInicio = inicioHora * 60 + inicioMin;
-	const totalFim = fimHora * 60 + fimMin;
-
-	const duration = totalFim - totalInicio;
-
-	if (duration < 60) {
-		return 50; // Menos de 1 hora
-	} else if (duration <= 120) {
-		return 100; // Entre 1 e 2 horas
-	} else {
-		return 150; // Mais de 2 horas
-	}
-};
 
 function UserActivity() {
 	const [formData, setFormData] = useState({
@@ -132,7 +111,13 @@ function UserActivity() {
 		const horaInicio = formData.timestampStart.slice(11, 16);
 		const horaFim = formData.timestampEnd.slice(11, 16);
 
-		const score = calculateScore(horaInicio, horaFim);
+		const scoreTime = scoreCalculator(horaInicio, horaFim);
+
+		const score = Math.ceil(
+			scoreTime *
+				(formData.estimatedCalories / 200) *
+				(formData.avgHeartbeat / 100),
+		);
 
 		adicionarAtividade({
 			...formData,
