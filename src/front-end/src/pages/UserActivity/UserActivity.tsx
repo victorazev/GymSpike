@@ -106,27 +106,26 @@ function UserActivity() {
 	return (
 		<>
 			<div className={styles.activityCard} key="form">
-				<div className={styles.activityHeader}>
-					<span style={{ fontSize: '20px' }}>
-						Adicione uma atividade
-					</span>
+				<div className={styles.addActivity}>
+					{data?.length
+						? 'Adicionar nova atividade'
+						: 'Adicione sua primeira atividade'}
 				</div>
 
 				<form className={styles.form} onSubmit={handleSubmit}>
 					<div className={styles.activityDetails}>
 						<div>
 							<label>Tipo de exercício</label>
-							<br />
 							<select
-								style={{
-									marginBottom: '10px',
-									fontSize: '16px',
-								}}
+								className={styles.cardSelect}
 								name="exerciseType"
 								value={formData.exerciseType}
 								onChange={handleChange}
 								required
 							>
+								<option value="" disabled selected hidden>
+									Selecione um exercício
+								</option>
 								{options.map((item) => (
 									<option value={item.value} key={item.value}>
 										{item.label}
@@ -163,7 +162,7 @@ function UserActivity() {
 							/>
 						</div>
 						<div>
-							<label>Calorias</label>
+							<label>Calorias estimadas</label>
 							<input
 								type="number"
 								placeholder="Ex.: 300"
@@ -172,7 +171,7 @@ function UserActivity() {
 								required
 							/>
 						</div>
-						<div>
+						<div className={styles.cardButton}>
 							<Button type={'submit'}>Adicionar</Button>
 						</div>
 					</div>
