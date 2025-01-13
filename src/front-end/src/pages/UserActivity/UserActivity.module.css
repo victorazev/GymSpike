@@ -4,16 +4,28 @@
 	color: #fff;
 	border-radius: 8px;
 	padding: 15px;
-	margin-bottom: 15px;
 	font-size: 14px;
 	cursor: pointer;
 	transition: all 0.3s ease;
+
+	&:not(:last-child) {
+		margin-bottom: 8px;
+	}
 }
 
 .activityCard .activityHeader {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.activityCard .addActivity {
+	color: #f4a100;
+	align-items: center;
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-align: center;
+	transition: all 0.3s ease-in-out;
 }
 
 .activityHeader svg {
@@ -47,4 +59,43 @@ h3 {
 label {
 	font-weight: 500;
 	font-size: 1rem;
+}
+
+.cardSelect {
+	appearance: none;
+	width: 100%;
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 16px;
+	margin-top: 4px;
+	padding: 12px;
+	border: none;
+	border-radius: 8px;
+	color: #000;
+	background-color: #ddd;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+
+	@media (min-width: 768px) {
+		font-size: 1.2rem;
+	}
+}
+
+.cardSelect:focus {
+	outline: 2px solid #f4a100;
+	background-color: #fff;
+}
+
+input {
+	margin-top: 4px;
+}
+
+input[type='datetime-local']::-webkit-calendar-picker-indicator {
+	filter: invert(1);
+}
+
+.cardButton {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
