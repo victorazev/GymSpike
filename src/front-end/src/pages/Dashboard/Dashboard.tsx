@@ -13,6 +13,7 @@ import { dashData } from '../../services/apiDashboard';
 
 import styles from './Dashboard.module.css';
 import Loader from '../../components/LoadSpinner/Loader';
+import { CustomTooltip } from './CustomTooltip';
 
 interface Data {
 	score: number;
@@ -68,7 +69,7 @@ function Dashboard() {
 				<BarChart data={data}>
 					<CartesianGrid strokeDasharray="3 3" />
 					<XAxis dataKey="date" />
-					<Tooltip />
+					<Tooltip content={<CustomTooltip />} />
 					<Bar
 						dataKey="score"
 						fill="#ffae00"
