@@ -153,6 +153,7 @@ export const Cadastro = () => {
           </label>
         </div>
         <Button type="submit">Cadastrar</Button>
+        <Button onClick={() => navigate("/login")}>Voltar</Button>
       </form>
     </div>
   );

@@ -8,6 +8,16 @@
   background-color: #1A1A1A;
   padding: 16px;
 }
+.logoimage {
+  width: 100px;
+  height: auto;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
 
 h2 {
   color: #F4A100;

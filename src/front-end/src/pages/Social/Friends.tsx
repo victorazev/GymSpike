@@ -154,7 +154,7 @@ export function Friends() {
 		<h1 className={styles.title}>Grupos</h1>
 		<div className={styles.cards}>
 		  <div className={styles.actions}>
-		  	<Button onClick={() => setShowPopup2(true)}>+Entra no grupo</Button>
+		  	<Button onClick={() => setShowPopup2(true)}>Entrar em um grupo</Button>
 			<Button onClick={() => setShowPopup(true)}>Criar grupo</Button>
 			<Button onClick={handleDeleteGroups}>Excluir grupos</Button>
 		  </div>

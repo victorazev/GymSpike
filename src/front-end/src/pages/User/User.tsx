@@ -90,7 +90,7 @@ export function User() {
 					</div>
 
 					<Button onClick={() => navigate("/userconfig")}>Configurações</Button>
-					<Button onClick={() => signOut()}>Logout</Button>
+					<Button onClick={() => { signOut(); navigate("/login"); } }>Logout</Button>
 			</div>
 	);
 }

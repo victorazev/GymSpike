@@ -5,6 +5,7 @@ import { useAuth } from "../../contexts/auth";
 import Button from "../../components/Button/Button";
 
 import styles from "./Login.module.css";
+import Logo from "../../assets/GymSpike.png";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -25,7 +26,14 @@ const Login = () => {
 
   return (
     <div className={styles.container}>
-      <h2>GymSpike</h2>
+      <div className={styles.logo}>
+        <img
+            className={styles.logoimage}
+            src={Logo}
+            alt="Logo"
+          />
+        <h2>GymSpike</h2>
+      </div>
       <form className={styles.form} onSubmit={handleLogin}>
         <input
           type="email"

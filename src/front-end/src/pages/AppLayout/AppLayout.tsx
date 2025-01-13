@@ -8,6 +8,7 @@ import {
 } from 'react-icons/hi2';
 import avatar1 from '../../assets/avatar1.png';
 import { useAuth } from '../../contexts/auth';
+import Logo from "../../assets/GymSpike.png";
 
 function AppLayout() {
 	const navigate = useNavigate();
@@ -20,11 +21,18 @@ function AppLayout() {
 		<div>
 			<div className={styles.profileinfo}>
 				<img
-					className={styles.profileimage}
-					src={avatar1}
-					alt="Profile"
+					className={styles.logoimage}
+					src={Logo}
+					alt="Logo"
 				/>
-				<p>{user?.username}</p>
+				<div className={styles.profilename} onClick={() => navigate('/user')}>
+					<p>{user?.username}</p>
+					<img
+						className={styles.profileimage}
+						src={avatar1}
+						alt="Profile"
+					/>
+				</div>
 			</div>
 
 			<main className={styles.card}>
