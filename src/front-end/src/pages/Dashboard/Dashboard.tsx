@@ -24,11 +24,12 @@ interface Data {
 function Dashboard() {
 	const [data, setData] = useState<Data[] | null>(null);
 	const [isLoading, setIsLoading] = useState(false);
+	const [days, setDays] = useState(7);
 
 	useEffect(() => {
 		async function fetchData() {
 			setIsLoading(true);
-			const aux = await dashData();
+			const aux = await dashData(7);
 			setData(aux);
 			setIsLoading(false);
 		}
@@ -59,12 +60,51 @@ function Dashboard() {
 		);
 	}
 
+	function handleData(range: number) {
+		async function fetchData() {
+			const aux = await dashData(range);
+			setData(aux);
+		}
+		fetchData();
+	}
+
 	return (
 		<div style={{ height: 400, width: '100%' }}>
 			<h1 className={styles.title}>Bem vindo!</h1>
-			<p className={styles.description}>
+			<p
+				className={styles.description}
+				style={{
+					marginBottom: `${data?.length < 7 ? '2rem' : ''}`,
+				}}
+			>
 				Aqui estão alguns dados prévios da sua jornada
 			</p>
+
+			{data?.length < 7 ? (
+				''
+			) : (
+				<div className={styles.grupoBotao}>
+					<button
+						onClick={() => {
+							setDays(7);
+							handleData(7);
+						}}
+						disabled={days == 7 ? true : false}
+					>
+						7
+					</button>
+					<button
+						onClick={() => {
+							setDays(30);
+							handleData(30);
+						}}
+						disabled={days == 30 ? true : false}
+					>
+						30
+					</button>
+				</div>
+			)}
+
 			<ResponsiveContainer style={{ marginBottom: '1rem' }}>
 				<BarChart data={data}>
 					<CartesianGrid strokeDasharray="3 3" />
