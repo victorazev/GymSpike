@@ -9,6 +9,12 @@ import {
 import avatar1 from '../../assets/avatar1.png';
 import { useAuth } from '../../contexts/auth';
 import Logo from "../../assets/GymSpike.png";
+import quack from '../../assets/Quack.mp3'
+
+const playSound = () => {
+	const audio = new Audio(quack); // Crie uma instância do áudio
+	audio.play(); // Reproduza o som
+  };
 
 function AppLayout() {
 	const navigate = useNavigate();
@@ -19,7 +25,7 @@ function AppLayout() {
 
 	return (
 		<div>
-			<div className={styles.profileinfo}>
+			<div className={styles.profileinfo} onClick={playSound}>
 				<img
 					className={styles.logoimage}
 					src={Logo}
