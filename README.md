@@ -69,6 +69,7 @@ Exemplo:
     <tr>
         <td align="center"><a href="https://github.com/KalebIsaias"><img style="border-radius: 50%;" src="https://github.com/KalebIsaias.png" width="100px;" alt=""/><br><sub><b>Kaleb Isaias</b></sub></a><br><sub>Mentor</sub></td>
         <td align="center"><a href="https://github.com/victorazev"><img style="border-radius: 50%;" src="https://github.com/victorazev.png" width="100px;" alt=""/><br><sub><b>Victor Azevedo</b></sub></a><br><sub>Front-end</sub></td>
+        <td align="center"><a href="https://github.com/gcvs2k"><img style="border-radius: 50%;" src="https://github.com/gcvs2k.png" width="100px;" alt=""/><br><sub><b>Guilherme Cally</b></sub></a><br><sub>Dev</sub></td>
     </tr>
 </table>
 
