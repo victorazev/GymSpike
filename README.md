@@ -1,5 +1,4 @@
-# Nome do Projeto 🚀💪
-Imagem da capa aqui.
+# GymSpike 🔩🏃
 <Table>
   <tr>
     <td>
@@ -44,8 +43,37 @@ Descreva a estrutura utilizada. A equipe deve ser clara, não assumindo que o le
 
 ## Funcionalidades ⚙️
 
-- [x] Funcionalidade implementada
-- [ ] Funcionalidade pendente/em produção
+- ✅ Funcionalidade implementada
+- ❌ Funcionalidade pendente/em produção
+
+  ### Cadastro e Gerenciamento de Dados
+
+| Identificador | Descrição                                                               | Prioridade | Implementado |
+|:--------------|:------------------------------------------------------------------------|:-----------|:-------------|
+| RF01          | O sistema deve permitir o cadastro de usuários                          | Alta       | ✅            |
+| RF02          | Permitir login (autenticação) do usuário                                | Alta       | ✅            |
+| RF03          | Editar informações do usuário                                           | Alta       | ✅            |
+| RF04          | Exibir perfil de outros usuários                                        | Média      | ❌            |
+| RF05          | Permitir conexão entre usuários                                         | Média      | ❌            |
+| RF06          | Criar grupos de amigos                                                  | Baixa      | ❌            |
+
+### Sistema de Gamificação
+
+| Identificador | Descrição                                                               | Prioridade | Implementado |
+|:--------------|:------------------------------------------------------------------------|:-----------|:-------------|
+| RF07          | O sistema deve oferecer atividades diárias e semanais                   | Alta       | ❌            |
+| RF08          | O usuário poderá visualizar o ranking geral                             | Média      | ❌            |
+| RF09          | O usuário receberá recompensas de acordo com a conclusão de atividades  | Baixa      | ❌            |
+| RF10          | O usuário terá uma sequência de dias de atividades                      | Alta       | ❌            |
+| RF11          | O usuário poderá realizar atividades em conjunto com um grupo de amigos | Baixa      | ❌            |
+
+### Feedback e Análise de Progresso
+
+| Identificador | Descrição                                                               | Prioridade | Implementado |
+|:--------------|:------------------------------------------------------------------------|:-----------|:-------------|
+| RF12          | O usuário poderá visualizar seu histórico de atividades                 | Alta       | ✅            |
+| RF13          | O usuário poderá compartilhar sua análise de atividades na comunidade   | Baixa      | ❌            |
+| RF14          | O usuário poderá compartilhar o feedback em aplicações externas         | Baixa      | ❌            |
 
 ## Status do Projeto 🔔
 
