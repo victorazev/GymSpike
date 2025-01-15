@@ -29,6 +29,63 @@ Uma breve descrição do projeto. A equipe deve incluir as _badges_ das tecnolog
     <img alt="Badge com a logo Node" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
 </div>
 
+# Projeto GymSpike
+
+Este projeto foi desenvolvido como parte do processo seletivo da **Apogeu**, com o objetivo de avaliar a capacidade do grupo em trabalhar em equipe e desenvolver uma aplicação para resolver um problema proposto por uma startup fictícia.
+
+## Estrutura do Projeto
+
+O projeto foi dividido em 4 sprints, cada uma com um foco específico:
+
+- **Sprint 1:** Projeto e Negócios
+- **Sprint 2:** Back-end
+- **Sprint 3:** Front-end
+- **Sprint 4:** Ajustes para a Apresentação Final
+
+Ao final de cada sprint, houve uma apresentação para membros da Apogeu, culminando na **Sprint 4** com uma apresentação do projeto a um possível investidor.
+
+## Sobre a StartFit
+
+**StartFit** é uma startup fictícia focada em incentivar estilos de vida mais saudáveis, conectando pessoas ao início de suas jornadas no mundo dos exercícios físicos. A missão da empresa é:
+
+- **Eliminar barreiras** que impedem indivíduos de adotar uma rotina saudável, especialmente no estágio inicial.
+- **Prover orientação**, aumentar a motivação e contornar limitações financeiras.
+
+### Problema a Resolver
+
+Muitas pessoas enfrentam desafios ao iniciar uma rotina de exercícios, incluindo:
+- Falta de conhecimento
+- Dificuldade em manter a consistência
+- Baixa motivação
+- Limitações financeiras
+- Adaptação à rotina
+- Busca por resultados rápidos que muitas vezes levam ao desânimo
+
+**StartFit** propõe uma solução tecnológica que seja:
+
+- **Acessível e motivadora**
+- **Personalizada** com orientações, organização de rotinas e pequenos passos práticos
+- **Recompensadora** para tornar o início da jornada mais simples, independentemente da experiência ou recursos do usuário.
+
+## Solução Desenvolvida
+
+O grupo desenvolveu uma plataforma chamada Gymspike que busca atender a dois tipos de **personas**:
+
+- Indivíduos que nunca começaram uma rotina saudável.
+- Aqueles que constantemente abandonam uma rotina saudável.
+
+**Escopo de Idade:** 20 a 32 anos, cobrindo ambos os sexos.
+
+### Características da plataforma GymSpike
+
+- **Gamificação:** Para incentivar o engajamento através de desafios e recompensas.
+- **Interação Social:** Para criar uma comunidade de suporte.
+- **Design:** Focado em mobile com predominância das cores **preto e amarelo**.
+
+## Conclusão
+
+O projeto GymSpike não só demonstrou a capacidade técnica e de gestão de projeto do grupo, mas também abordou de forma inovadora os desafios de saúde e bem-estar, criando uma solução que visa tornar o início de uma vida saudável mais acessível e prazeroso para todos.
+
 ## Estrutura de Pastas 🗂️
 * Raíz
 
