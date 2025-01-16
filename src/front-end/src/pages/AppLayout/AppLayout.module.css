@@ -17,6 +17,7 @@ html, body{
 
 .profileinfo {
 	display: flex;
+	justify-content: space-between; /* Espaça os itens entre si */
 	align-items: center;
 	background-color: #2d2d2d; /* Cinza escuro */
 	color: #ffffff;
@@ -35,13 +36,23 @@ html, body{
 	border-radius: 50%;
 	border: 2px solid #f4a100; /* Laranja */
 }
+.logoimage {
+  width: 50px;
+  height: auto;
+}
 
 .profileinfo p {
-	font-size: 1.2rem;
-	margin-left: 1rem;
+	font-size: 1.5rem;
+	margin-right: 1rem;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+.profilename{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
 }
 
 /* Espaço principal (entre header e footer) */
@@ -83,11 +94,14 @@ html, body{
 	color: #f4a100; /* Laranja */
 	transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 	width: 5rem;
+	padding: 0.5rem;
 }
 
 .icon:hover {
 	background-color: #f7931e;
 	color: #ffffff;
+	box-shadow: 0px 0px 10px rgba(244, 161, 0, 0.7);
+	border-radius: 0.5rem;
 }
 
 .icon.active {
@@ -106,7 +120,7 @@ li > :first-child {
 /* Responsividade */
 @media (max-width: 768px) {
 	.profileinfo p {
-		font-size: 1rem;
+		font-size: 1.25rem;
 	}
 
 	.icon {

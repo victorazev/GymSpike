@@ -6,23 +6,39 @@ import {
 	HiOutlineUserGroup,
 	HiDocumentCheck,
 } from 'react-icons/hi2';
-import avatar1 from '../../assets/avatar4.png';
+import avatar1 from '../../assets/avatar1.png';
+import { useAuth } from '../../contexts/auth';
+import Logo from "../../assets/GymSpike.png";
+import quack from '../../assets/Quack.mp3'
+
+const playSound = () => {
+	const audio = new Audio(quack); // Crie uma instância do áudio
+	audio.play(); // Reproduza o som
+  };
 
 function AppLayout() {
 	const navigate = useNavigate();
 	const location = useLocation();
+	const {user} = useAuth();
 
 	const isActive = (route: string) => location.pathname === route;
 
 	return (
 		<div>
-			<div className={styles.profileinfo}>
+			<div className={styles.profileinfo} onClick={playSound}>
 				<img
-					className={styles.profileimage}
-					src={avatar1}
-					alt="Profile"
+					className={styles.logoimage}
+					src={Logo}
+					alt="Logo"
 				/>
-				<p>Nome ou username</p>
+				<div className={styles.profilename} onClick={() => navigate('/user')}>
+					<p>{user?.username}</p>
+					<img
+						className={styles.profileimage}
+						src={avatar1}
+						alt="Profile"
+					/>
+				</div>
 			</div>
 
 			<main className={styles.card}>
@@ -32,7 +48,7 @@ function AppLayout() {
 			<ul className={styles.footer}>
 				<li
 					className={`${styles.icon} ${isActive('/dashboard') ? styles.active : ''}`}
-					onClick={() => navigate('/')}
+					onClick={() => navigate('/dashboard')}
 				>
 					<HiBars4 />
 					Menu
@@ -52,7 +68,7 @@ function AppLayout() {
 					Amigos
 				</li>
 				<li
-					className={`${styles.icon} ${isActive('/activities') ? styles.active : ''}`}
+					className={`${styles.icon} ${isActive('/userActivity') ? styles.active : ''}`}
 					onClick={() => navigate('/userActivity')}
 				>
 					<HiDocumentCheck />

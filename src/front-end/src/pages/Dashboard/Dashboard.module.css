@@ -1,4 +1,76 @@
-* {
-	margin: 0;
-	padding: 0;
+.title {
+	text-align: center;
+	font-size: 2rem;
+	color: #2d2d2d;
+	margin-bottom: 1rem;
+}
+
+.description {
+	text-align: center;
+	font-size: 1.2rem;
+	color: #555555;
+	max-width: 600px; /* Limitar a largura para textos longos */
+	margin-bottom: 8px;
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+.ajuda {
+	text-align: center;
+	font-size: 1.2rem;
+	color: #555555;
+	max-width: 600px; /* Limitar a largura para textos longos */
+	margin-bottom: 1rem;
+	animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.grupoBotao {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+
+	& button {
+		width: 26px;
+		padding: 4px;
+		margin: 0px;
+		font-size: 0.8rem;
+		font-weight: bold;
+		cursor: pointer;
+		background-color: #f0f0f0;
+		color: #000;
+		transition: background-color 0.3s;
+		transition: 0.5s, transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	& :first-child {
+		border-radius: 8px 0px 0px 8px;
+		border: 2px solid #ddd;
+		border-right: 1px solid #ddd;
+	}
+
+	& :last-child {
+		border-radius: 0px 8px 8px 0px;
+		border: 2px solid #ddd;
+		border-left: 1px solid #ddd;
+	}
+
+	& :hover {
+		background-color: #c2c2c2;
+		transition: 0.5s;
+	}
+
+	& button:disabled {
+		background-color: #ddd;
+		cursor: not-allowed;
+	}
 }

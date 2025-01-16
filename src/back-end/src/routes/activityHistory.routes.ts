@@ -3,6 +3,7 @@ import {
 	createActivity,
 	getUserActivities,
 	getActivityById,
+	getUserRangeActivities,
 } from '../controllers/activityHistory.controller';
 import { authenticate } from '../middlewares/auth.middleware';
 
@@ -20,6 +21,13 @@ router.get(
 	'/:userId/activities',
 	authenticate,
 	getUserActivities,
+);
+
+// Obter limitadas atividades de um usuário
+router.get(
+	'/:userId/activities/filter/:range',
+	authenticate,
+	getUserRangeActivities,
 );
 
 // Obter atividade pelo id da atividade

@@ -1,0 +1,25 @@
+.spinnerWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	background-color: #f9f9f9;
+}
+
+.spinner {
+	border: 4px solid #f3f3f3; /* Cor de fundo do spinner */
+	border-top: 4px solid #f4a100; /* Cor da spinner */
+	border-radius: 50%;
+	width: 10rem;
+	height: 10rem;
+	animation: spin 500ms linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

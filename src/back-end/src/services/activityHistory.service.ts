@@ -34,6 +34,18 @@ export const getUserActivities = async (
 	});
 };
 
+// Busca todas as atividades de um usuário
+export const getUserRangeActivities = async (
+	userId: string,
+	range: number,
+): Promise<UserActivityHistoryDocument[]> => {
+	return await ActivityHistoryModel.find({
+		userReference: userId,
+	})
+		.sort({ timestampStart: -1 })
+		.limit(range);
+};
+
 // Busca uma atividade específica por ID (com dados do usuário populados)
 export const getActivityById = async (
 	activityId: string,
