@@ -1,4 +1,5 @@
 # GymSpike 🔩🏃
+
 <Table>
   <tr>
     <td>
@@ -19,14 +20,26 @@
  <a href="#desenvolvedores-octocat">Desenvolvedores</a>
 </p>
 
+## Desenvolvedores :octocat:
+
+<table>
+    <tr>
+        <td align="center"><a href="https://github.com/KalebIsaias"><img style="border-radius: 50%;" src="https://github.com/KalebIsaias.png" width="100px;" alt=""/><br><sub><b>Kaleb Isaias</b></sub></a><br><sub>Mentor</sub></td>
+        <td align="center"><a href="https://github.com/victorazev"><img style="border-radius: 50%;" src="https://github.com/victorazev.png" width="100px;" alt=""/><br><sub><b>Victor Azevedo</b></sub></a><br><sub>Fullstack</sub></td>
+        <td align="center"><a href="https://github.com/gcvs2k"><img style="border-radius: 50%;" src="https://github.com/gcvs2k.png" width="100px;" alt=""/><br><sub><b>Guilherme Cally</b></sub></a><br><sub>Fullstack</sub></td>
+        <td align="center"><a href="https://github.com/Dan-ado"><img style="border-radius: 50%;" src="https://github.com/Dan-ado.png" width="100px;" alt=""/><br><sub><b>Daniel Nunes</b></sub></a><br><sub>Fullstack</sub></td>
+        <td align="center"><a href="https://github.com/TiagoGandra"><img style="border-radius: 50%;" src="https://github.com/TiagoGandra.png" width="100px;" alt=""/><br><sub><b>Tiago Gandra</b></sub></a><br><sub>Fullstack</sub></td>
+    </tr>
+</table>
+
 ## Descrição 📋
-Uma breve descrição do projeto. A equipe deve incluir as _badges_ das tecnologias, como:
+
 <div align="center">
-    <img alt="Badge com a logo JavaScript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>
+    <img alt="Badge com a logo Node" src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">
     <img alt="Badge com a logo Node" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
     <img alt="Badge com a logo Node" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge"/>
-    <img alt="Badge com a logo Node" src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white"/>
     <img alt="Badge com a logo Node" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
+    <img alt="Badge com a logo Node" src="https://shields.io/badge/react-black?logo=react&style=for-the-badge"/>
 </div>
 
 # Projeto GymSpike
@@ -54,6 +67,7 @@ Ao final de cada sprint, houve uma apresentação para membros da Apogeu, culmin
 ### Problema a Resolver
 
 Muitas pessoas enfrentam desafios ao iniciar uma rotina de exercícios, incluindo:
+
 - Falta de conhecimento
 - Dificuldade em manter a consistência
 - Baixa motivação
@@ -87,14 +101,15 @@ O grupo desenvolveu uma plataforma chamada Gymspike que busca atender a dois tip
 O projeto GymSpike não só demonstrou a capacidade técnica e de gestão de projeto do grupo, mas também abordou de forma inovadora os desafios de saúde e bem-estar, criando uma solução que visa tornar o início de uma vida saudável mais acessível e prazeroso para todos.
 
 ## Estrutura de Pastas 🗂️
-* Raíz
 
-    ├── documentação <br>
-    ├── src <br>
-        &emsp;&emsp; └── back-end <br>
-        &emsp;&emsp;&emsp;&emsp; └── src <br>
-        &emsp;&emsp; └── front-end <br>
-        &emsp;&emsp;&emsp;&emsp; └── src <br>
+- Raíz
+
+  ├── documentação <br>
+  ├── src <br>
+  &emsp;&emsp; └── back-end <br>
+  &emsp;&emsp;&emsp;&emsp; └── src <br>
+  &emsp;&emsp; └── front-end <br>
+  &emsp;&emsp;&emsp;&emsp; └── src <br>
 
 - A *documentação* descreve o projeto GymSpike, um aplicativo mobile/web destinado a ajudar usuários a estabelecerem e manterem hábitos saudáveis de forma consistente, utilizando estratégias como gamificação e interação social e desafios personalizados. Ele identifica os desafios enfrentados pelos usuários para manter a consistência em rotinas saudáveis e propõe soluções tecnológicas e estratégias de engajamento baseadas em perfis e necessidades reais.
 
@@ -109,14 +124,14 @@ O projeto GymSpike não só demonstrou a capacidade técnica e de gestão de pro
 
   ### Cadastro e Gerenciamento de Dados
 
-| Identificador | Descrição                                                               | Prioridade | Implementado |
-|:--------------|:------------------------------------------------------------------------|:-----------|:-------------|
-| RF01          | O sistema deve permitir o cadastro de usuários                          | Alta       | ✅            |
-| RF02          | Permitir login (autenticação) do usuário                                | Alta       | ✅            |
-| RF03          | Editar informações do usuário                                           | Alta       | ✅            |
-| RF04          | Exibir perfil de outros usuários                                        | Média      | ❌            |
-| RF05          | Permitir conexão entre usuários                                         | Média      | ❌            |
-| RF06          | Criar grupos de amigos                                                  | Baixa      | ❌            |
+| Identificador | Descrição                                      | Prioridade | Implementado |
+| :------------ | :--------------------------------------------- | :--------- | :----------- |
+| RF01          | O sistema deve permitir o cadastro de usuários | Alta       | ✅           |
+| RF02          | Permitir login (autenticação) do usuário       | Alta       | ✅           |
+| RF03          | Editar informações do usuário                  | Alta       | ✅           |
+| RF04          | Exibir perfil de outros usuários               | Média      | ❌           |
+| RF05          | Permitir conexão entre usuários                | Média      | ❌           |
+| RF06          | Criar grupos de amigos                         | Baixa      | ❌           |
 
 ### Sistema de Gamificação
 
@@ -130,11 +145,11 @@ O projeto GymSpike não só demonstrou a capacidade técnica e de gestão de pro
 
 ### Feedback e Análise de Progresso
 
-| Identificador | Descrição                                                               | Prioridade | Implementado |
-|:--------------|:------------------------------------------------------------------------|:-----------|:-------------|
-| RF12          | O usuário poderá visualizar seu histórico de atividades                 | Alta       | ✅            |
-| RF13          | O usuário poderá compartilhar sua análise de atividades na comunidade   | Baixa      | ❌            |
-| RF14          | O usuário poderá compartilhar o feedback em aplicações externas         | Baixa      | ❌            |
+| Identificador | Descrição                                                             | Prioridade | Implementado |
+| :------------ | :-------------------------------------------------------------------- | :--------- | :----------- |
+| RF12          | O usuário poderá visualizar seu histórico de atividades               | Alta       | ✅           |
+| RF13          | O usuário poderá compartilhar sua análise de atividades na comunidade | Baixa      | ❌           |
+| RF14          | O usuário poderá compartilhar o feedback em aplicações externas       | Baixa      | ❌           |
 
 ## Status do Projeto 🔔
 
@@ -142,24 +157,31 @@ O projeto GymSpike não só demonstrou a capacidade técnica e de gestão de pro
 
 ## Como rodar a aplicação ▶️
 
-```bash
-# Passo a passo para rodar o projeto localmente. A equipe deve ser detalhista,
-# informando desde a clonagem do repositório até a configuração de variáveis de ambiente.
+Para rodar a aplicação é necessário ter Git Bash e Node (versão v22.12.0 utilizada) instalados.
 
-...
+Clonar o código:
+
+```bash
+git clone https://github.com/Apogeu-Solutions/PS24.2-G02.git
+cd PS24.2-G02
 ```
 
-## Desenvolvedores :octocat:
-Exemplo:
+**Importante**: É necessário abrir um terminal dentro da pasta do projeot para rodar cada instância do projeto
 
-<table>
-    <tr>
-        <td align="center"><a href="https://github.com/KalebIsaias"><img style="border-radius: 50%;" src="https://github.com/KalebIsaias.png" width="100px;" alt=""/><br><sub><b>Kaleb Isaias</b></sub></a><br><sub>Mentor</sub></td>
-        <td align="center"><a href="https://github.com/victorazev"><img style="border-radius: 50%;" src="https://github.com/victorazev.png" width="100px;" alt=""/><br><sub><b>Victor Azevedo</b></sub></a><br><sub>Front-end</sub></td>
-        <td align="center"><a href="https://github.com/gcvs2k"><img style="border-radius: 50%;" src="https://github.com/gcvs2k.png" width="100px;" alt=""/><br><sub><b>Guilherme Cally</b></sub></a><br><sub>Dev</sub></td>
-        <td align="center"><a href="https://github.com/Dan-ado"><img style="border-radius: 50%;" src="https://github.com/Dan-ado.png" width="100px;" alt=""/><br><sub><b>Daniel Nunes</b></sub></a><br><sub>Dev</sub></td>
-        <td align="center"><a href="https://github.com/TiagoGandra"><img style="border-radius: 50%;" src="https://github.com/TiagoGandra.png" width="100px;" alt=""/><br><sub><b>Tiago Gandra</b></sub></a><br><sub>Dev</sub></td>
-    </tr>
-</table>
+Inicialização do back-end:
+
+```bash
+cd scr/back-end
+npm install
+npm start
+```
+
+Inicialização do front-end:
+
+```bash
+cd src/front-end
+npm install
+npm run dev
+```
 
 &copy; [Apogeu](https://github.com/Apogeu-Solutions)
