@@ -69,6 +69,31 @@ export const getUserActivities = async (
 	}
 };
 
+// Busca todas as atividades de um usuário
+export const getUserRangeActivities = async (
+	req: Request,
+	res: Response,
+	next: NextFunction,
+): Promise<void> => {
+	try {
+		const { userId, range } = req.params;
+
+		if (!userId) {
+			res.status(400).json({ message: 'User ID is required' });
+			return;
+		}
+
+		const activities =
+			await ActivityService.getUserRangeActivities(
+				userId,
+				Number(range),
+			);
+		res.status(200).json(activities);
+	} catch (error) {
+		next(error);
+	}
+};
+
 // Busca uma atividade pelo ID
 export const getActivityById = async (
 	req: Request,
