@@ -111,11 +111,11 @@ O projeto GymSpike não só demonstrou a capacidade técnica e de gestão de pro
   &emsp;&emsp; └── front-end <br>
   &emsp;&emsp;&emsp;&emsp; └── src <br>
 
-- A *documentação* descreve o projeto GymSpike, um aplicativo mobile/web destinado a ajudar usuários a estabelecerem e manterem hábitos saudáveis de forma consistente, utilizando estratégias como gamificação e interação social e desafios personalizados. Ele identifica os desafios enfrentados pelos usuários para manter a consistência em rotinas saudáveis e propõe soluções tecnológicas e estratégias de engajamento baseadas em perfis e necessidades reais.
+- A _documentação_ descreve o projeto GymSpike, um aplicativo mobile/web destinado a ajudar usuários a estabelecerem e manterem hábitos saudáveis de forma consistente, utilizando estratégias como gamificação e interação social e desafios personalizados. Ele identifica os desafios enfrentados pelos usuários para manter a consistência em rotinas saudáveis e propõe soluções tecnológicas e estratégias de engajamento baseadas em perfis e necessidades reais.
 
-- O *back-end* do GymSpike é responsável por gerenciar a lógica principal e a interação com o banco de dados MongoDB. Ele fornece APIs para autenticação, registro de atividades, criação de grupos, monitoramento de progresso e rankings. A modelagem do banco prioriza flexibilidade e escalabilidade, permitindo fácil armazenamento e recuperação de dados dos usuários. O sistema também incorpora medidas de segurança e conformidade com a LGPD, garantindo proteção dos dados e uma experiência confiável para os usuários.
+- O _back-end_ do GymSpike é responsável por gerenciar a lógica principal e a interação com o banco de dados MongoDB. Ele fornece APIs para autenticação, registro de atividades, criação de grupos, monitoramento de progresso e rankings. A modelagem do banco prioriza flexibilidade e escalabilidade, permitindo fácil armazenamento e recuperação de dados dos usuários. O sistema também incorpora medidas de segurança e conformidade com a LGPD, garantindo proteção dos dados e uma experiência confiável para os usuários.
 
-- O *front-end* é focado em oferecer uma experiência de usuário intuitiva e acessível. Desenvolvido com React, ele proporciona interfaces responsivas para cadastro, monitoramento de progresso e interação em grupos. A aplicação prioriza usabilidade, permitindo que os usuários acompanhem atividades e rankings de forma clara e eficiente. Com design moderno e interativo, o front-end busca engajar os usuários enquanto facilita a visualização e gestão de seus objetivos fitness.
+- O _front-end_ é focado em oferecer uma experiência de usuário intuitiva e acessível. Desenvolvido com React, ele proporciona interfaces responsivas para cadastro, monitoramento de progresso e interação em grupos. A aplicação prioriza usabilidade, permitindo que os usuários acompanhem atividades e rankings de forma clara e eficiente. Com design moderno e interativo, o front-end busca engajar os usuários enquanto facilita a visualização e gestão de seus objetivos fitness.
 
 ## Funcionalidades ⚙️
 
@@ -136,11 +136,11 @@ O projeto GymSpike não só demonstrou a capacidade técnica e de gestão de pro
 ### Sistema de Gamificação
 
 | Identificador | Descrição                                                               | Prioridade | Implementado |
-|:--------------|:------------------------------------------------------------------------|:-----------|:-------------|
-| RF07          | O sistema deve oferecer atividades diárias e semanais                   | Alta       | ❌            |
-| RF08          | O usuário poderá visualizar o ranking geral                             | Média      | ❌            |
-| RF09          | O usuário receberá recompensas de acordo com a conclusão de atividades  | Baixa      | ❌            |
-| RF10          | O usuário terá uma sequência de dias de atividades                      | Alta       | ✅            |
+| :------------ | :---------------------------------------------------------------------- | :--------- | :----------- |
+| RF07          | O sistema deve oferecer atividades diárias e semanais                   | Alta       | ❌           |
+| RF08          | O usuário poderá visualizar o ranking geral                             | Média      | ❌           |
+| RF09          | O usuário receberá recompensas de acordo com a conclusão de atividades  | Baixa      | ❌           |
+| RF10          | O usuário terá uma sequência de dias de atividades                      | Alta       | ✅           |
 | RF11          | O usuário poderá realizar atividades em conjunto com um grupo de amigos | Baixa      | ❌           |
 
 ### Feedback e Análise de Progresso
@@ -159,7 +159,9 @@ O projeto GymSpike não só demonstrou a capacidade técnica e de gestão de pro
 
 Para rodar a aplicação é necessário ter Git Bash e Node (versão v22.12.0 utilizada) instalados.
 
-Clonar o código:
+### Clonar o código
+
+Rode este código no terminal:
 
 ```bash
 git clone https://github.com/Apogeu-Solutions/PS24.2-G02.git
@@ -168,7 +170,16 @@ cd PS24.2-G02
 
 **Importante**: É necessário abrir um terminal dentro da pasta do projeot para rodar cada instância do projeto
 
-Inicialização do back-end:
+### Inicialização do back-end
+
+Crie um arquivo "_.env_" com as seguintes chaves:
+
+```JS
+STRING_CONNECTION = // Sua connection string
+PORT = 5000 // Ou a porta que deseja utilizar
+```
+
+Rodando o servidor no termial:
 
 ```bash
 cd scr/back-end
@@ -176,7 +187,9 @@ npm install
 npm start
 ```
 
-Inicialização do front-end:
+### Inicialização do front-end
+
+Rodando o front-end no terminal:
 
 ```bash
 cd src/front-end
