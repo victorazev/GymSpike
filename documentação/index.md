@@ -49,12 +49,38 @@
 
 &emsp;&emsp;A pesquisa sobre o problema que o seu negócio busca resolver é essencial para a validação da ideia. Identificar e compreender se há, de fato, um problema real e relevante permite confirmar a necessidade de uma solução no mercado. Esse entendimento é fundamental para construir um plano de negócios sólido e alinhado com as demandas dos potenciais clientes.
 
-&emsp;&emsp; O problema identificado é a manutenção de hábitos saudáveis.
-&emsp;&emsp; Na era que vivemos hoje, é muito fácil começar uma rotina de bons hábitos, nas redes sociais somos bombardeados com dicas, influencers que incentivam tais rotinas e que geralmente envolve em dormir 8 horas, aderir a um esporte, começar uma dieta e beber bastante água.
-&emsp;&emsp; Porem essa facilidade de começar tem um problema grande, que é a constância. Geralmente as pessoas ficam nessas rotinas num período de 1 semana a 1 mês e vão com o tempo largando cada tentativa de mudança de habito proposta e voltando a “estaca zero”.
-&emsp;&emsp; Assim sendo, observa-se a necessidade de desenvolver uma solução que não só atraia o usuário a baixar o aplicativo, mas como também manter ele engajado para assim possibilitar a manutenção desses hábitos.
+&emsp;&emsp; O problema identificado é a manutenção de hábitos saudáveis. Na era que vivemos hoje, é muito fácil começar uma rotina de bons hábitos, nas redes sociais somos bombardeados com dicas, influencers que incentivam tais rotinas e que geralmente envolve em dormir 8 horas, aderir a um esporte, começar uma dieta e beber bastante água. Porem essa facilidade de começar tem um problema grande, que é a constância. Geralmente as pessoas ficam nessas rotinas num período de 1 semana a 1 mês e vão com o tempo largando cada tentativa de mudança de habito proposta e voltando a “estaca zero”. Assim sendo, observa-se a necessidade de desenvolver uma solução que não só atraia o usuário a baixar o aplicativo, mas como também manter ele engajado para assim possibilitar a manutenção desses hábitos.
 
 #### 1.1.1 Análise do Problema
+
+O problema central descrito é a dificuldade em manter hábitos saudáveis a longo prazo. Embora a era digital ofereça uma abundância de informações e motivação inicial através de redes sociais e influencers, a manutenção desses hábitos apresenta um desafio significativo. Aqui estão alguns pontos de análise:
+
+#### Motivação Inicial vs. Motivação de Longo Prazo
+
+- **Motivação Inicial:** Há uma grande quantidade de conteúdo que inspira a adoção de hábitos saudáveis, como dormir bem, praticar esportes, seguir dietas e hidratar-se adequadamente. Esse conteúdo serve como um catalisador para a mudança, mas frequentemente não é suficiente para manter o interesse e a disciplina necessários.
+
+- **Motivação de Longo Prazo:** A motivação inicial tende a esvanecer após um curto período, resultando em abandono das novas práticas. Isso pode ser devido à falta de recompensas imediatas, a dificuldade das mudanças em si ou a falta de suporte contínuo.
+
+#### Fatores que Contribuem para a Desistência
+
+- **Falta de Resultados Visíveis:** Muitos hábitos saudáveis não produzem resultados imediatos ou óbvios, o que pode desmotivar as pessoas.
+- **Complexidade e Tempo:** Adotar e manter múltiplos hábitos simultaneamente pode ser esmagador, especialmente para quem já tem uma vida ocupada.
+- **Ambiente e Suporte Social:** Sem um ambiente que suporte ou incentive essas mudanças, é mais fácil voltar aos velhos hábitos.
+
+#### Soluções Potenciais
+
+- **Engajamento Continuado:** Aplicativos ou plataformas que não apenas atraem usuários mas também os mantêm engajados podem ajudar. Isso pode ser feito através de:
+  - **Gamificação:** Transformar hábitos em desafios ou jogos onde os usuários ganham pontos, badges ou outros incentivos.
+  - **Comunidade:** Criar ou integrar com comunidades onde os usuários possam compartilhar progressos, desafios e sucessos, gerando um senso de pertencimento e responsabilidade.
+  - **Personalização:** Oferecer planos personalizados baseados no progresso e feedback do usuário, adaptando-se às suas necessidades e capacidades.
+
+- **Educação e Suporte:** Prover educação contínua sobre os benefícios dos hábitos, não apenas na saúde física mas também na mental e emocional, pode ajudar a manter o interesse.
+   
+- **Recompensas e Feedback:** Sistemas de recompensa baseados em pequenos objetivos alcançados e feedback positivo podem motivar a continuidade.
+
+#### Conclusão da análise
+
+Para solucionar o problema da manutenção de hábitos saudáveis, é crucial criar sistemas que não apenas iniciem mas também sustentem o engajamento do usuário. Isso envolve uma combinação de gamificação, suporte comunitário, personalização, educação e um sistema de recompensas e feedback que reconheça o esforço e o progresso. A chave é transformar a disciplina em algo prazeroso e visivelmente recompensador, tornando os hábitos saudáveis parte integrante e natural da rotina diária.
 
 #### 1.1.2 Análise do Cenário (Matriz SWOT)
 
