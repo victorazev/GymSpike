@@ -96,7 +96,11 @@ O projeto GymSpike não só demonstrou a capacidade técnica e de gestão de pro
         &emsp;&emsp; └── front-end <br>
         &emsp;&emsp;&emsp;&emsp; └── src <br>
 
-Descreva a estrutura utilizada. A equipe deve ser clara, não assumindo que o leitor entende a arquitetura utilizada.
+- A *documentação* descreve o projeto GymSpike, um aplicativo mobile/web destinado a ajudar usuários a estabelecerem e manterem hábitos saudáveis de forma consistente, utilizando estratégias como gamificação e interação social e desafios personalizados. Ele identifica os desafios enfrentados pelos usuários para manter a consistência em rotinas saudáveis e propõe soluções tecnológicas e estratégias de engajamento baseadas em perfis e necessidades reais.
+
+- O *back-end* do GymSpike é responsável por gerenciar a lógica principal e a interação com o banco de dados MongoDB. Ele fornece APIs para autenticação, registro de atividades, criação de grupos, monitoramento de progresso e rankings. A modelagem do banco prioriza flexibilidade e escalabilidade, permitindo fácil armazenamento e recuperação de dados dos usuários. O sistema também incorpora medidas de segurança e conformidade com a LGPD, garantindo proteção dos dados e uma experiência confiável para os usuários.
+
+- O *front-end* é focado em oferecer uma experiência de usuário intuitiva e acessível. Desenvolvido com React, ele proporciona interfaces responsivas para cadastro, monitoramento de progresso e interação em grupos. A aplicação prioriza usabilidade, permitindo que os usuários acompanhem atividades e rankings de forma clara e eficiente. Com design moderno e interativo, o front-end busca engajar os usuários enquanto facilita a visualização e gestão de seus objetivos fitness.
 
 ## Funcionalidades ⚙️
 
@@ -121,8 +125,8 @@ Descreva a estrutura utilizada. A equipe deve ser clara, não assumindo que o le
 | RF07          | O sistema deve oferecer atividades diárias e semanais                   | Alta       | ❌            |
 | RF08          | O usuário poderá visualizar o ranking geral                             | Média      | ❌            |
 | RF09          | O usuário receberá recompensas de acordo com a conclusão de atividades  | Baixa      | ❌            |
-| RF10          | O usuário terá uma sequência de dias de atividades                      | Alta       | ❌            |
-| RF11          | O usuário poderá realizar atividades em conjunto com um grupo de amigos | Baixa      | ❌            |
+| RF10          | O usuário terá uma sequência de dias de atividades                      | Alta       | ✅            |
+| RF11          | O usuário poderá realizar atividades em conjunto com um grupo de amigos | Baixa      | ❌           |
 
 ### Feedback e Análise de Progresso
 
@@ -135,8 +139,6 @@ Descreva a estrutura utilizada. A equipe deve ser clara, não assumindo que o le
 ## Status do Projeto 🔔
 
 ✅ Concluído ✅
-🚧 Em andamento 🚧
-💡 Em atualização 💡
 
 ## Como rodar a aplicação ▶️
 
