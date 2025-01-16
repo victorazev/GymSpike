@@ -3,10 +3,10 @@
 <Table>
   <tr>
     <td>
-      <a href= ""><img src="https://cdn.discordapp.com/attachments/1328538067983798282/1328538091786338325/Imagem_do_WhatsApp_de_2025-01-10_as_14.43.28_2b84d7a9.jpg?ex=67871104&is=6785bf84&hm=96a630d4ed2ef4a8621d083166945b0afa1d91e82bb39ccfb4a06b9d52f1f99f&" alt="" border="0">
+      <a href= ""><img src="https://cdn.discordapp.com/attachments/1328538067983798282/1328538305071026283/image.png?ex=67871136&is=6785bfb6&hm=d6991233d8ddff9f22beb7ecff572f5840e3b6d4f98555c9ac1863fc16fe29ff&" alt="" border="0"></a>
     </td>
     <td>
-      <a href= ""><img src="https://cdn.discordapp.com/attachments/1328538067983798282/1328538305071026283/image.png?ex=67871136&is=6785bfb6&hm=d6991233d8ddff9f22beb7ecff572f5840e3b6d4f98555c9ac1863fc16fe29ff&" alt="" border="0"></a>
+      <a href= ""><img src="https://cdn.discordapp.com/attachments/1328538067983798282/1328538091786338325/Imagem_do_WhatsApp_de_2025-01-10_as_14.43.28_2b84d7a9.jpg?ex=67871104&is=6785bf84&hm=96a630d4ed2ef4a8621d083166945b0afa1d91e82bb39ccfb4a06b9d52f1f99f&" alt="" border="0">
     </td>
   </tr>
 </table>
