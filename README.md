@@ -12,12 +12,12 @@
 </table>
 
 <p align="center">
+ <a href="#desenvolvedores-octocat">Desenvolvedores</a> •
  <a href="#descrição-">Descrição</a> •
  <a href="#estrutura-de-pastas-%EF%B8%8F">Pastas</a> •
  <a href="#funcionalidades-%EF%B8%8F">Funcionalidades</a> •
  <a href="#status-do-projeto-">Status</a> •
- <a href="#como-rodar-a-aplicação-%EF%B8%8F">Rodar</a> •
- <a href="#desenvolvedores-octocat">Desenvolvedores</a>
+ <a href="#como-rodar-a-aplicação-%EF%B8%8F">Rodar</a>
 </p>
 
 ## Desenvolvedores :octocat:
