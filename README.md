@@ -20,6 +20,18 @@
  <a href="#desenvolvedores-octocat">Desenvolvedores</a>
 </p>
 
+## Desenvolvedores :octocat:
+
+<table>
+    <tr>
+        <td align="center"><a href="https://github.com/KalebIsaias"><img style="border-radius: 50%;" src="https://github.com/KalebIsaias.png" width="100px;" alt=""/><br><sub><b>Kaleb Isaias</b></sub></a><br><sub>Mentor</sub></td>
+        <td align="center"><a href="https://github.com/victorazev"><img style="border-radius: 50%;" src="https://github.com/victorazev.png" width="100px;" alt=""/><br><sub><b>Victor Azevedo</b></sub></a><br><sub>Fullstack</sub></td>
+        <td align="center"><a href="https://github.com/gcvs2k"><img style="border-radius: 50%;" src="https://github.com/gcvs2k.png" width="100px;" alt=""/><br><sub><b>Guilherme Cally</b></sub></a><br><sub>Fullstack</sub></td>
+        <td align="center"><a href="https://github.com/Dan-ado"><img style="border-radius: 50%;" src="https://github.com/Dan-ado.png" width="100px;" alt=""/><br><sub><b>Daniel Nunes</b></sub></a><br><sub>Fullstack</sub></td>
+        <td align="center"><a href="https://github.com/TiagoGandra"><img style="border-radius: 50%;" src="https://github.com/TiagoGandra.png" width="100px;" alt=""/><br><sub><b>Tiago Gandra</b></sub></a><br><sub>Fullstack</sub></td>
+    </tr>
+</table>
+
 ## Descrição 📋
 
 <div align="center">
@@ -169,19 +181,5 @@ cd src/front-end
 npm install
 npm run dev
 ```
-
-## Desenvolvedores :octocat:
-
-Exemplo:
-
-<table>
-    <tr>
-        <td align="center"><a href="https://github.com/KalebIsaias"><img style="border-radius: 50%;" src="https://github.com/KalebIsaias.png" width="100px;" alt=""/><br><sub><b>Kaleb Isaias</b></sub></a><br><sub>Mentor</sub></td>
-        <td align="center"><a href="https://github.com/victorazev"><img style="border-radius: 50%;" src="https://github.com/victorazev.png" width="100px;" alt=""/><br><sub><b>Victor Azevedo</b></sub></a><br><sub>Front-end</sub></td>
-        <td align="center"><a href="https://github.com/gcvs2k"><img style="border-radius: 50%;" src="https://github.com/gcvs2k.png" width="100px;" alt=""/><br><sub><b>Guilherme Cally</b></sub></a><br><sub>Dev</sub></td>
-        <td align="center"><a href="https://github.com/Dan-ado"><img style="border-radius: 50%;" src="https://github.com/Dan-ado.png" width="100px;" alt=""/><br><sub><b>Daniel Nunes</b></sub></a><br><sub>Dev</sub></td>
-        <td align="center"><a href="https://github.com/TiagoGandra"><img style="border-radius: 50%;" src="https://github.com/TiagoGandra.png" width="100px;" alt=""/><br><sub><b>Tiago Gandra</b></sub></a><br><sub>Dev</sub></td>
-    </tr>
-</table>
 
 &copy; [Apogeu](https://github.com/Apogeu-Solutions)
