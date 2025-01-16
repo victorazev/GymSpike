@@ -22,14 +22,12 @@
 
 ## Descrição 📋
 
-Uma breve descrição do projeto. A equipe deve incluir as _badges_ das tecnologias, como:
-
 <div align="center">
-    <img alt="Badge com a logo JavaScript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>
+    <img alt="Badge com a logo Node" src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">
     <img alt="Badge com a logo Node" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
     <img alt="Badge com a logo Node" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge"/>
-    <img alt="Badge com a logo Node" src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white"/>
     <img alt="Badge com a logo Node" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
+    <img alt="Badge com a logo Node" src="https://shields.io/badge/react-black?logo=react&style=for-the-badge"/>
 </div>
 
 # Projeto GymSpike
