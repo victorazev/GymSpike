@@ -100,7 +100,7 @@ function UserActivity() {
 		});
 
 		const atividades = await receberAtividades();
-		setData(atividades);
+		setData(() => atividades);
 	};
 
 	return (
