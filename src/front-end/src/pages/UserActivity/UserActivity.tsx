@@ -92,7 +92,7 @@ function UserActivity() {
 				(formData.avgHeartbeat / 100),
 		);
 
-		adicionarAtividade({
+		await adicionarAtividade({
 			...formData,
 			score: score,
 			estimatedCalories: Number(formData.estimatedCalories),
