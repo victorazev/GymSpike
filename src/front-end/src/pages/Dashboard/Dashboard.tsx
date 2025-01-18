@@ -69,7 +69,7 @@ function Dashboard() {
 	}
 
 	return (
-		<div style={{ height: 400, width: '100%' }}>
+		<div className={styles.dashboard}>
 			<h1 className={styles.title}>Bem vindo!</h1>
 			<p
 				className={styles.description}
