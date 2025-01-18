@@ -74,6 +74,31 @@ body {
 	position: relative; /* Remove centralização fixa para rolagem funcionar */
 }
 
+@media (hover: hover) and (pointer: fine) {
+	/* Apenas para desktop */
+	/* Web kit apernas para Chrome, Edge, Safari */
+	.card::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+
+	.card::-webkit-scrollbar-thumb {
+		background: #c0c0c0;
+		border-radius: 4px;
+	}
+
+	.card::-webkit-scrollbar-thumb:hover {
+		background: #b8b8b8;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.card::-webkit-scrollbar-track {
+		background: transparent;
+	}
+}
+
 /* Footer */
 .footer {
 	display: flex;
