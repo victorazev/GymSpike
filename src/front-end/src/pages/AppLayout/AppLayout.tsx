@@ -1,4 +1,8 @@
-import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+import {
+	Outlet,
+	useLocation,
+	useNavigate,
+} from 'react-router-dom';
 import styles from './AppLayout.module.css';
 import {
 	HiBars4,
@@ -8,30 +12,35 @@ import {
 } from 'react-icons/hi2';
 import avatar1 from '../../assets/avatar1.png';
 import { useAuth } from '../../contexts/auth';
-import Logo from "../../assets/GymSpike.png";
-import quack from '../../assets/Quack.mp3'
+import Logo from '../../assets/GymSpike.png';
+import quack from '../../assets/Quack.mp3';
 
 const playSound = () => {
 	const audio = new Audio(quack); // Crie uma instância do áudio
 	audio.play(); // Reproduza o som
-  };
+};
 
 function AppLayout() {
 	const navigate = useNavigate();
 	const location = useLocation();
-	const {user} = useAuth();
+	const { user } = useAuth();
 
-	const isActive = (route: string) => location.pathname === route;
+	const isActive = (route: string) =>
+		location.pathname === route;
 
 	return (
 		<div>
-			<div className={styles.profileinfo} onClick={playSound}>
+			<div className={styles.profileinfo}>
 				<img
 					className={styles.logoimage}
 					src={Logo}
 					alt="Logo"
+					onClick={playSound}
 				/>
-				<div className={styles.profilename} onClick={() => navigate('/user')}>
+				<div
+					className={styles.profilename}
+					onClick={() => navigate('/user')}
+				>
 					<p>{user?.username}</p>
 					<img
 						className={styles.profileimage}
@@ -47,28 +56,36 @@ function AppLayout() {
 
 			<ul className={styles.footer}>
 				<li
-					className={`${styles.icon} ${isActive('/dashboard') ? styles.active : ''}`}
+					className={`${styles.icon} ${
+						isActive('/dashboard') ? styles.active : ''
+					}`}
 					onClick={() => navigate('/dashboard')}
 				>
 					<HiBars4 />
 					Menu
 				</li>
 				<li
-					className={`${styles.icon} ${isActive('/user') ? styles.active : ''}`}
+					className={`${styles.icon} ${
+						isActive('/user') ? styles.active : ''
+					}`}
 					onClick={() => navigate('/user')}
 				>
 					<HiOutlineUser />
 					Perfil
 				</li>
 				<li
-					className={`${styles.icon} ${isActive('/friends') ? styles.active : ''}`}
+					className={`${styles.icon} ${
+						isActive('/friends') ? styles.active : ''
+					}`}
 					onClick={() => navigate('/friends')}
 				>
 					<HiOutlineUserGroup />
 					Amigos
 				</li>
 				<li
-					className={`${styles.icon} ${isActive('/userActivity') ? styles.active : ''}`}
+					className={`${styles.icon} ${
+						isActive('/userActivity') ? styles.active : ''
+					}`}
 					onClick={() => navigate('/userActivity')}
 				>
 					<HiDocumentCheck />
@@ -78,6 +95,5 @@ function AppLayout() {
 		</div>
 	);
 }
-
 
 export default AppLayout;
