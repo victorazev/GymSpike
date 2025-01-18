@@ -66,7 +66,9 @@ function AppLayout() {
 				</li>
 				<li
 					className={`${styles.icon} ${
-						isActive('/user') ? styles.active : ''
+						isActive('/user') || isActive('/userconfig')
+							? styles.active
+							: ''
 					}`}
 					onClick={() => navigate('/user')}
 				>
@@ -75,7 +77,9 @@ function AppLayout() {
 				</li>
 				<li
 					className={`${styles.icon} ${
-						isActive('/friends') ? styles.active : ''
+						isActive('/friends') || isActive('/groups')
+							? styles.active
+							: ''
 					}`}
 					onClick={() => navigate('/friends')}
 				>
