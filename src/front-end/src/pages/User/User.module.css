@@ -6,7 +6,6 @@
   padding: 1rem;
   min-height: 80vh;
   gap: 2rem; /* Espaçamento entre seções */
-  background-color: var(--background-color, #f5f5f5); /* Variável para fundo */
 }
 
 .title {
@@ -32,7 +31,7 @@
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
