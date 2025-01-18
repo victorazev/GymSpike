@@ -1,3 +1,5 @@
+import toast from 'react-hot-toast';
+
 const token = localStorage.getItem('authToken');
 const userObj = JSON.parse(localStorage.getItem('user'));
 
@@ -19,13 +21,17 @@ export async function adicionarAtividade(atividade: any) {
 		);
 
 		if (!response.ok) {
+			const data = await response.json();
+			toast.error(data.message);
 			throw new Error(`HTTP error! status: ${response.status}`);
 		}
 
+		toast.success('Atividade adicionada com sucesso!');
 		const data = await response.json();
 
 		return data;
 	} catch (error) {
+		toast.error(`Erro adicionar atividade: ${error}`);
 		console.error('Erro adicionar atividade:', error);
 	}
 }
@@ -45,7 +51,7 @@ export async function receberAtividades() {
 
 		const data = await response.json();
 
-		return data;
+		return data.reverse();
 	} catch (error) {
 		console.error('Erro ao fazer login:', error);
 	}
